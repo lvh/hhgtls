@@ -1,0 +1,64 @@
+#+Title: The Hitchhiker's Guide to TLS
+#+Author: lvh, Paul Kehrer
+#+Email: {lvh@, paul.kehrer@}
+
+* Introduction
+
+Dramatis personae, et cetera
+
+* A whirlwind tour of TLS
+
+# Baseline introduction to TLS (25 min)
+# Loosely based on Hynek’s PyCon 2014 talk.
+# Basics of TLS: what does it get you, TLS handshake, what’s a certificate…
+
+* Clients
+
+** What does a TLS client do?
+
+   Pretty much just verify the cert
+
+** Playing around with TLS
+
+*** Using requests (10 min)
+*** Using Twisted endpoints (10 min)
+
+* Servers
+
+** Configuring TLS servers
+
+** Plain TLS servers (10 min)
+
+*** Python stdlib (5 min)
+*** Twisted endpoints (5 min)
+
+** HTTPS servers (15 min)
+
+*** aiohttp
+*** nginx
+
+* Cert pinning
+
+* Alternative trust chains
+
+** Self-signed certs
+
+** Running your own internal CA
+
+* Client certificates
+
+** Why?
+
+** Trust chains
+
+* TLS extensions
+
+** SNI
+
+** NPN/ALPN
+
+* Debugging TLS connections
+
+** No compatible ciphersuites
+
+Missing intermediates
