@@ -1,16 +1,200 @@
 #+Title: The Hitchhiker's Guide to TLS
 #+Author: lvh, Paul Kehrer
-#+Email: {lvh@, paul.kehrer@}
+#+Email: {glyph.lefkowitz@, lvh@, paul.kehrer@}
+
+#+OPTIONS: toc:nil reveal_rolling_links:nil num:nil reveal_history:true
+#+REVEAL_TRANS: linear
+#+REVEAL_THEME: rackspace
 
 * Introduction
 
-Dramatis personae, et cetera
+** Glyph Lefkowitz
 
-* A whirlwind tour of TLS
+   Senior Software Engineer, Infrastructure Practice Area
 
-# Baseline introduction to TLS (25 min)
-# Loosely based on Hynek’s PyCon 2014 talk.
-# Basics of TLS: what does it get you, TLS handshake, what’s a certificate…
+   ~glyph.lefkowitz@rackspace.com~
+
+   ~@glyph~
+
+** lvh
+
+   Principal Engineer, Rackspace Managed Security
+
+   ~lvh@rackspace.com~
+
+   ~@lvh~
+
+** Paul Kehrer
+
+   Principal Engineer, Rackspace Managed Security
+
+   ~paul.kehrer@rackspace.com~
+
+   ~@reaperhulk~
+
+* High-level overview of TLS
+
+** What is TLS?
+
+   * Transport Layer Security
+   * /The/ protocol for protecting data in motion
+
+** Why do you want TLS?
+
+   * Identity
+   * Confidentiality
+   * Integrity
+
+** Where do we use TLS?
+
+   * Clients
+     * Browsers
+     * API clients
+   * Bits in the middle
+   * Servers
+
+** Timeline
+
+   * 1995: SSL 2.0 (Netscape)
+   * 1996: SSL 3.0 (Netscape)
+   * 1999: TLS 1.0 (IETF), ~SSLv3
+   * 2006: TLS 1.1 (IETF)
+   * 2008: TLS 1.2 (IETF)
+   * 2016?: TLS 1.3 (IETF)
+
+** Timeline
+
+   Poor uptake:
+
+   * Last thing called SSL is 20yrs old
+   * TLSv1.2 is 8yrs old yet support is spotty
+
+** Timeline
+
+   TLS has been around for a while
+
+   * Lots of lumiferous aether era crypto
+   * Lots of export-grade crypto
+   * /Still/ the thing you want, I promise
+
+** Why not TLS everywhere?
+
+   * TLS is slow :(
+   * Certs are a scam/hard/expensive :(
+   * TLS means I use up an IPv4 addr :(
+   * Using TLS is hard :(
+   * TLS is insecure :(
+   * Configuring TLS is hard :(
+   * We don't really need TLS
+
+** Goal of this presentation
+
+   * TLS is pretty snappy
+   * Certs are free† and usually easy
+   * You do not need a dedicated IPv4 addr
+   * Using TLS is easy
+   * TLS is your best bet
+   * Configuring TLS is pretty easy
+   * No, you definitely need TLS
+
+** Why do people think TLS is slow?
+
+*** TLS in your stack
+
+    * Application (e.g. HTTP)
+    * TLS
+    * TCP/IP
+    * Turtles (all the way down)
+
+*** TLSv1.2 worst-case, 3 RT
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/Full_TLS_1.2_Handshake.svg]]
+
+*** TLSv1.2 with sessions, 2 RT
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/Abbreviated_TLS_1.2_Handshake.svg]]
+
+*** TLSv1.2 with false start
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/TLS_False_Start.svg]]
+
+*** Not good enough for Google
+
+    * Google wanted 0 RT /total/
+    * QUIC: UDP-based, new crypto tricks
+    * Deeply influenced TLSv1.3
+
+*** TLSv1.3 base case, 2 RT
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/Full_TLS_1.3_Handshake.svg]]
+
+*** TLSv1.3 happy PSK case, 2 RT
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/Abbreviated_TLS_1.3_Handshake.svg]]
+
+*** TLSv1.3 happy 1 RTT case
+
+    /vigorous waving of hands/
+
+    * No extra latency!
+    * Needs application changes
+    * More caveats and asterisks
+    * Still TCP round-trip (QUIC is UDP)
+
+* Certificates
+
+* Ciphersuites
+
+** Reminder: TLS handshake
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/Full_TLS_1.2_Handshake.svg]]
+
+** What's in a ciphersuite?
+
+    * How do we sign our interaction?
+    * How do we agree on keys?
+    * How do we encrypt bulk data?
+    * How do we authenticate bulk data?
+
+** Signing
+
+   * Defined by your certificate
+   * Almost always RSA
+   * ECDSA if you can get someone to sign it
+
+** Key exchange
+
+    |       | Fast? | PFS? |
+    |-------+-------+------|
+    | /     | <     |      |
+    | RSA   | ✓     | ✗    |
+    | DHE   | ✗     | ✓    |
+    | ECHDE | ✗     | ✓    |
+
+*** Why non-PFS ciphersuites?
+
+*** Used to be much slower
+
+    DHE is slow, but ECDHE is /fast/
+
+*** It's not a bug, it's a feature
+
+    Decrypting middleware, like WAFs
+
+*** Non-PFS is dying
+
+    TLSv1.3 does not support non-PFS suites!
+
+** How do you pick ciphersuites?
+
+   * ~https://wiki.mozilla.org/Security/Server_Side_TLS~
+   * Sometimes depends on your clients
 
 * Clients
 
@@ -18,7 +202,15 @@ Dramatis personae, et cetera
 
    Pretty much just verify the cert
 
-** Playing around with TLS
+** What does "verify" mean?
+
+   It's complicated, but, roughly:
+
+   * Does the hostname match?
+   * Is the certificate still valid?
+   * Is the chain trusted?
+
+** Playing around with clients
 
 *** Using requests (10 min)
 *** Using Twisted endpoints (10 min)
@@ -47,15 +239,30 @@ Dramatis personae, et cetera
 
 * Client certificates
 
-** Why?
+** Recap: "normal" TLS
 
-** Trust chains
+   * Server is authenticated by TLS (certificate)
+   * Client is /not/ authenticated by TLS
+   * Client auth happens in app layer
+     * Login form, cookies, ...
 
-* TLS extensions
+** Alternative: client certificates
 
-** SNI
+   Both peers exchange & verify certs
 
-** NPN/ALPN
+
+* SNI
+
+  (Server Name Indication)
+
+** Problem
+
+   1. Client uses DNS to go from host name to IP
+   2. Client connects to IP, expects TLS handshake
+
+   What if I host multiple sites on 1 IP?
+
+* NPN/ALPN
 
 * Debugging TLS connections
 

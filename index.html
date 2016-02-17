@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Hitchhiker's Guide to TLS</title>
+<meta name="author" content="(lvh, Paul Kehrer)"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/rackspace.css" id="theme"/>
+<link rel="stylesheet" href=""/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>The Hitchhiker's Guide to TLS</h1>
+<h2>lvh, Paul Kehrer</h2>
+<h2><a href="mailto:{glyph.lefkowitz@">{glyph.lefkowitz@</a>, <a href="mailto:lvh@">lvh@</a>, <a href="mailto:paul.kehrer@}">paul.kehrer@}</a></h2>
+<h2></h2>
+</section>
+
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4">Introduction</h2>
+<div class="outline-text-2" id="text-orgheadline4">
+</div></section>
+<section id="slide-orgheadline1">
+<h3 id="orgheadline1">Glyph Lefkowitz</h3>
+<p>
+Senior Software Engineer, Infrastructure Practice Area
+</p>
+
+<p>
+<code>glyph.lefkowitz@rackspace.com</code>
+</p>
+
+<p>
+<code>@glyph</code>
+</p>
+
+</section>
+<section id="slide-orgheadline2">
+<h3 id="orgheadline2">lvh</h3>
+<p>
+Principal Engineer, Rackspace Managed Security
+</p>
+
+<p>
+<code>lvh@rackspace.com</code>
+</p>
+
+<p>
+<code>@lvh</code>
+</p>
+
+</section>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3">Paul Kehrer</h3>
+<p>
+Principal Engineer, Rackspace Managed Security
+</p>
+
+<p>
+<code>paul.kehrer@rackspace.com</code>
+</p>
+
+<p>
+<code>@reaperhulk</code>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline22">
+<h2 id="orgheadline22">High-level overview of TLS</h2>
+<div class="outline-text-2" id="text-orgheadline22">
+</div></section>
+<section id="slide-orgheadline5">
+<h3 id="orgheadline5">What is TLS?</h3>
+<ul>
+<li>Transport Layer Security</li>
+<li><i>The</i> protocol for protecting data in motion</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6">Why do you want TLS?</h3>
+<ul>
+<li>Identity</li>
+<li>Confidentiality</li>
+<li>Integrity</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7">Where do we use TLS?</h3>
+<ul>
+<li>Clients
+<ul>
+<li>Browsers</li>
+<li>API clients</li>
+
+</ul></li>
+<li>Bits in the middle</li>
+<li>Servers</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline8">
+<h3 id="orgheadline8">Timeline</h3>
+<ul>
+<li>1995: SSL 2.0 (Netscape)</li>
+<li>1996: SSL 3.0 (Netscape)</li>
+<li>1999: TLS 1.0 (IETF), ~SSLv3</li>
+<li>2006: TLS 1.1 (IETF)</li>
+<li>2008: TLS 1.2 (IETF)</li>
+<li>2016?: TLS 1.3 (IETF)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline9">
+<h3 id="orgheadline9">Timeline</h3>
+<p>
+Poor uptake:
+</p>
+
+<ul>
+<li>Last thing called SSL is 20yrs old</li>
+<li>TLSv1.2 is 8yrs old yet support is spotty</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline10">
+<h3 id="orgheadline10">Timeline</h3>
+<p>
+TLS has been around for a while
+</p>
+
+<ul>
+<li>Lots of lumiferous aether era crypto</li>
+<li>Lots of export-grade crypto</li>
+<li><i>Still</i> the thing you want, I promise</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11">Why not TLS everywhere?</h3>
+<ul>
+<li>TLS is slow :(</li>
+<li>Certs are a scam/hard/expensive :(</li>
+<li>TLS means I use up an IPv4 addr :(</li>
+<li>Using TLS is hard :(</li>
+<li>TLS is insecure :(</li>
+<li>Configuring TLS is hard :(</li>
+<li>We don't really need TLS</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12">Goal of this presentation</h3>
+<ul>
+<li>TLS is pretty snappy</li>
+<li>Certs are free† and usually easy</li>
+<li>You do not need a dedicated IPv4 addr</li>
+<li>Using TLS is easy</li>
+<li>TLS is your best bet</li>
+<li>Configuring TLS is pretty easy</li>
+<li>No, you definitely need TLS</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline21">
+<h3 id="orgheadline21">Why do people think TLS is slow?</h3>
+<div class="outline-text-3" id="text-orgheadline21">
+</div></section>
+<section id="slide-orgheadline13">
+<h4 id="orgheadline13">TLS in your stack</h4>
+<ul>
+<li>Application (e.g. HTTP)</li>
+<li>TLS</li>
+<li>TCP/IP</li>
+<li>Turtles (all the way down)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline14">
+<h4 id="orgheadline14">TLSv1.2 worst-case, 3 RT</h4>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/Full_TLS_1.2_Handshake.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline15">
+<h4 id="orgheadline15">TLSv1.2 with sessions, 2 RT</h4>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/Abbreviated_TLS_1.2_Handshake.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline16">
+<h4 id="orgheadline16">TLSv1.2 with false start</h4>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/TLS_False_Start.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline17">
+<h4 id="orgheadline17">Not good enough for Google</h4>
+<ul>
+<li>Google wanted 0 RT <i>total</i></li>
+<li>QUIC: UDP-based, new crypto tricks</li>
+<li>Deeply influenced TLSv1.3</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline18">
+<h4 id="orgheadline18">TLSv1.3 base case, 2 RT</h4>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/Full_TLS_1.3_Handshake.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline19">
+<h4 id="orgheadline19">TLSv1.3 happy PSK case, 2 RT</h4>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/Abbreviated_TLS_1.3_Handshake.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline20">
+<h4 id="orgheadline20">TLSv1.3 happy 1 RTT case</h4>
+<p>
+<i>vigorous waving of hands</i>
+</p>
+
+<ul>
+<li>No extra latency!</li>
+<li>Needs application changes</li>
+<li>More caveats and asterisks</li>
+<li>Still TCP round-trip (QUIC is UDP)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline23">
+<h2 id="orgheadline23">Certificates</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline33">
+<h2 id="orgheadline33">Ciphersuites</h2>
+<div class="outline-text-2" id="text-orgheadline33">
+</div></section>
+<section id="slide-orgheadline24">
+<h3 id="orgheadline24">Reminder: TLS handshake</h3>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="./media/Full_TLS_1.2_Handshake.svg" style="width:60%">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</section>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25">What's in a ciphersuite?</h3>
+<ul>
+<li>How do we sign our interaction?</li>
+<li>How do we agree on keys?</li>
+<li>How do we encrypt bulk data?</li>
+<li>How do we authenticate bulk data?</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline26">
+<h3 id="orgheadline26">Signing</h3>
+<ul>
+<li>Defined by your certificate</li>
+<li>Almost always RSA</li>
+<li>ECDSA if you can get someone to sign it</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline31">
+<h3 id="orgheadline31">Key exchange</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Fast?</th>
+<th scope="col" class="org-left">PFS?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">RSA</td>
+<td class="org-left">✓</td>
+<td class="org-left">✗</td>
+</tr>
+
+<tr>
+<td class="org-left">DHE</td>
+<td class="org-left">✗</td>
+<td class="org-left">✓</td>
+</tr>
+
+<tr>
+<td class="org-left">ECHDE</td>
+<td class="org-left">✗</td>
+<td class="org-left">✓</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<section id="slide-orgheadline27">
+<h4 id="orgheadline27">Why non-PFS ciphersuites?</h4>
+
+</section>
+<section id="slide-orgheadline28">
+<h4 id="orgheadline28">Used to be much slower</h4>
+<p>
+DHE is slow, but ECDHE is <i>fast</i>
+</p>
+
+</section>
+<section id="slide-orgheadline29">
+<h4 id="orgheadline29">It's not a bug, it's a feature</h4>
+<p>
+Decrypting middleware, like WAFs
+</p>
+
+</section>
+<section id="slide-orgheadline30">
+<h4 id="orgheadline30">Non-PFS is dying</h4>
+<p>
+TLSv1.3 does not support non-PFS suites!
+</p>
+
+</section>
+<section id="slide-orgheadline32">
+<h3 id="orgheadline32">How do you pick ciphersuites?</h3>
+<ul>
+<li><code>https://wiki.mozilla.org/Security/Server_Side_TLS</code></li>
+<li>Sometimes depends on your clients</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline39">
+<h2 id="orgheadline39">Clients</h2>
+<div class="outline-text-2" id="text-orgheadline39">
+</div></section>
+<section id="slide-orgheadline34">
+<h3 id="orgheadline34">What does a TLS client do?</h3>
+<p>
+Pretty much just verify the cert
+</p>
+
+</section>
+<section id="slide-orgheadline35">
+<h3 id="orgheadline35">What does "verify" mean?</h3>
+<p>
+It's complicated, but, roughly:
+</p>
+
+<ul>
+<li>Does the hostname match?</li>
+<li>Is the certificate still valid?</li>
+<li>Is the chain trusted?</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline38">
+<h3 id="orgheadline38">Playing around with clients</h3>
+<div class="outline-text-3" id="text-orgheadline38">
+</div></section>
+<section id="slide-orgheadline36">
+<h4 id="orgheadline36">Using requests (10 min)</h4>
+</section>
+<section id="slide-orgheadline37">
+<h4 id="orgheadline37">Using Twisted endpoints (10 min)</h4>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline47">
+<h2 id="orgheadline47">Servers</h2>
+<div class="outline-text-2" id="text-orgheadline47">
+</div></section>
+<section id="slide-orgheadline40">
+<h3 id="orgheadline40">Configuring TLS servers</h3>
+
+</section>
+<section id="slide-orgheadline43">
+<h3 id="orgheadline43">Plain TLS servers (10 min)</h3>
+<div class="outline-text-3" id="text-orgheadline43">
+</div></section>
+<section id="slide-orgheadline41">
+<h4 id="orgheadline41">Python stdlib (5 min)</h4>
+</section>
+<section id="slide-orgheadline42">
+<h4 id="orgheadline42">Twisted endpoints (5 min)</h4>
+
+</section>
+<section id="slide-orgheadline46">
+<h3 id="orgheadline46">HTTPS servers (15 min)</h3>
+<div class="outline-text-3" id="text-orgheadline46">
+</div></section>
+<section id="slide-orgheadline44">
+<h4 id="orgheadline44">aiohttp</h4>
+</section>
+<section id="slide-orgheadline45">
+<h4 id="orgheadline45">nginx</h4>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline48">
+<h2 id="orgheadline48">Cert pinning</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline51">
+<h2 id="orgheadline51">Alternative trust chains</h2>
+<div class="outline-text-2" id="text-orgheadline51">
+</div></section>
+<section id="slide-orgheadline49">
+<h3 id="orgheadline49">Self-signed certs</h3>
+
+</section>
+<section id="slide-orgheadline50">
+<h3 id="orgheadline50">Running your own internal CA</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline54">
+<h2 id="orgheadline54">Client certificates</h2>
+<div class="outline-text-2" id="text-orgheadline54">
+</div></section>
+<section id="slide-orgheadline52">
+<h3 id="orgheadline52">Recap: "normal" TLS</h3>
+<ul>
+<li>Server is authenticated by TLS (certificate)</li>
+<li>Client is <i>not</i> authenticated by TLS</li>
+<li>Client auth happens in app layer
+<ul>
+<li>Login form, cookies, &#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline53">
+<h3 id="orgheadline53">Alternative: client certificates</h3>
+<p>
+Both peers exchange &amp; verify certs
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline56">
+<h2 id="orgheadline56">SNI</h2>
+<p>
+(Server Name Indication)
+</p>
+
+</section>
+<section id="slide-orgheadline55">
+<h3 id="orgheadline55">Problem</h3>
+<ol>
+<li>Client uses DNS to go from host name to IP</li>
+<li>Client connects to IP, expects TLS handshake</li>
+
+</ol>
+
+<p>
+What if I host multiple sites on 1 IP?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline57">
+<h2 id="orgheadline57">NPN/ALPN</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline59">
+<h2 id="orgheadline59">Debugging TLS connections</h2>
+<div class="outline-text-2" id="text-orgheadline59">
+</div></section>
+<section id="slide-orgheadline58">
+<h3 id="orgheadline58">No compatible ciphersuites</h3>
+<p>
+Missing intermediates
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
