@@ -250,7 +250,6 @@
 
    Both peers exchange & verify certs
 
-
 * SNI
 
   (Server Name Indication)
