@@ -165,17 +165,19 @@
 
    I don't trust you,
 
-   but /x/ trusts you,
+   but the CA trusts you,
 
-   and I trust /x/.
+   and I trust the CA.
 
    #+BEGIN_NOTES
    Trust is not generally transitive!
    #+END_NOTES
 
-** /x/ is a CA
+** Where do you get CAs?
 
    Comes with your {OS, browser, runtime...}
+
+*** ~certifi~
 
 ** Example
 
@@ -397,7 +399,7 @@
     * Sometimes means "trust exactly this cert"
     * Sometimes, you have to rotate a key
 
-*** GMail should only be signed by Google
+*** GMail should be signed by Google
 
     Browsers (esp. Chrome) should know this
 
@@ -407,7 +409,7 @@
 
    HTTP Strict Transport Security
 
-*** Some sites should _always_ be served over HTTPS
+*** Some sites should always HTTPS
 
     Browsers should know this
 
@@ -431,7 +433,7 @@
 
    HTTP Public Key Pinning
 
-*** My site is signed by DigiCert, not the DoD
+*** DigiCert is my CA, not the DoD
 
     Browsers should know this
 
@@ -440,7 +442,7 @@
     Early stages!
 
     * Chrome has a hardcoded list
-    * FF working on it
+    * Firefox working on it
     * Spec is a WIP
 
 * Alternative trust chains
@@ -534,6 +536,8 @@
 # * NPN/ALPN
 
 * Debugging TLS connections
+
+  https://lukasa.co.uk/2016/01/Debugging_With_Wireshark_TLS/
 
 * Challenges for existing organizations
 
