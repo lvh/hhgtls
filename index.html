@@ -28,12 +28,21 @@
 </section>
 
 <section>
-<section id="slide-orgheadline4">
-<h2 id="orgheadline4">Introduction</h2>
-<div class="outline-text-2" id="text-orgheadline4">
-</div></section>
 <section id="slide-orgheadline1">
-<h3 id="orgheadline1">Glyph Lefkowitz</h3>
+<h2 id="orgheadline1">Slides</h2>
+<p>
+<code>https://www.lvh.io/hhgtls</code>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">Introduction</h2>
+<div class="outline-text-2" id="text-orgheadline5">
+</div></section>
+<section id="slide-orgheadline2">
+<h3 id="orgheadline2">Glyph Lefkowitz</h3>
 <p>
 Senior Software Engineer, IPA
 </p>
@@ -47,8 +56,8 @@ Senior Software Engineer, IPA
 </p>
 
 </section>
-<section id="slide-orgheadline2">
-<h3 id="orgheadline2">lvh</h3>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3">lvh</h3>
 <p>
 Principal Engineer, RMS
 </p>
@@ -62,8 +71,8 @@ Principal Engineer, RMS
 </p>
 
 </section>
-<section id="slide-orgheadline3">
-<h3 id="orgheadline3">Paul Kehrer</h3>
+<section id="slide-orgheadline4">
+<h3 id="orgheadline4">Paul Kehrer</h3>
 <p>
 Principal Engineer, RMS
 </p>
@@ -79,12 +88,12 @@ Principal Engineer, RMS
 </section>
 </section>
 <section>
-<section id="slide-orgheadline23">
-<h2 id="orgheadline23">High-level overview of TLS</h2>
-<div class="outline-text-2" id="text-orgheadline23">
+<section id="slide-orgheadline24">
+<h2 id="orgheadline24">High-level overview of TLS</h2>
+<div class="outline-text-2" id="text-orgheadline24">
 </div></section>
-<section id="slide-orgheadline5">
-<h3 id="orgheadline5">What is TLS/SSL?</h3>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6">What is TLS/SSL?</h3>
 <ul>
 <li>Transport Layer Security/Secure Sockets Layer</li>
 <li><i>The</i> protocol for protecting data in motion</li>
@@ -92,8 +101,8 @@ Principal Engineer, RMS
 </ul>
 
 </section>
-<section id="slide-orgheadline6">
-<h3 id="orgheadline6">Why do you want TLS?</h3>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7">Why do you want TLS?</h3>
 <ul>
 <li>Identity</li>
 <li>Confidentiality</li>
@@ -102,8 +111,8 @@ Principal Engineer, RMS
 </ul>
 
 </section>
-<section id="slide-orgheadline7">
-<h3 id="orgheadline7">Where do we use TLS?</h3>
+<section id="slide-orgheadline8">
+<h3 id="orgheadline8">Where do we use TLS?</h3>
 <ul>
 <li>Clients (browsers, API clients)</li>
 <li>Middleware (LBs, WAFs&#x2026;)</li>
@@ -120,8 +129,8 @@ quality, &amp;c
 </aside>
 
 </section>
-<section id="slide-orgheadline10">
-<h3 id="orgheadline10">Timeline</h3>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11">Timeline</h3>
 <ul>
 <li>1995: SSL 2.0 (Netscape)</li>
 <li>1996: SSL 3.0 (Netscape)</li>
@@ -133,8 +142,8 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline8">
-<h4 id="orgheadline8">Poor adoption of new versions</h4>
+<section id="slide-orgheadline9">
+<h4 id="orgheadline9">Poor adoption of new versions</h4>
 <ul>
 <li>Last thing called SSL is 20yrs old
 <ul>
@@ -146,8 +155,8 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline9">
-<h4 id="orgheadline9">TLS has been around for a while</h4>
+<section id="slide-orgheadline10">
+<h4 id="orgheadline10">TLS has been around for a while</h4>
 <ul>
 <li>Lots of lumiferous aether era crypto</li>
 <li>Lots of export-grade crypto</li>
@@ -156,8 +165,8 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline12">
-<h3 id="orgheadline12">Why not TLS everywhere?</h3>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13">Why not TLS everywhere?</h3>
 <ul>
 <li>TLS is slow :(</li>
 <li>Certs are a scam/hard/expensive :(</li>
@@ -169,8 +178,8 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline11">
-<h4 id="orgheadline11">Goal of this presentation</h4>
+<section id="slide-orgheadline12">
+<h4 id="orgheadline12">Goal of this presentation</h4>
 <ul>
 <li>TLS is pretty snappy</li>
 <li>Certs are free† and usually easy</li>
@@ -182,12 +191,12 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline22">
-<h3 id="orgheadline22">Why do people think TLS is slow?</h3>
-<div class="outline-text-3" id="text-orgheadline22">
+<section id="slide-orgheadline23">
+<h3 id="orgheadline23">Why do people think TLS is slow?</h3>
+<div class="outline-text-3" id="text-orgheadline23">
 </div></section>
-<section id="slide-orgheadline13">
-<h4 id="orgheadline13">TLS in your stack</h4>
+<section id="slide-orgheadline14">
+<h4 id="orgheadline14">TLS in your stack</h4>
 <ul>
 <li class="fragment roll-in">Application (e.g. HTTP)</li>
 <li class="fragment roll-in">TLS</li>
@@ -197,8 +206,8 @@ quality, &amp;c
 </ul>
 
 </section>
-<section id="slide-orgheadline14">
-<h4 id="orgheadline14">TLSv1.2 worst-case, 3 RT</h4>
+<section id="slide-orgheadline15">
+<h4 id="orgheadline15">TLSv1.2 worst-case, 3 RT</h4>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/Full_TLS_1.2_Handshake.svg" style="width:60%">
@@ -207,8 +216,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline15">
-<h4 id="orgheadline15">TLSv1.2 with sessions, 2 RT</h4>
+<section id="slide-orgheadline16">
+<h4 id="orgheadline16">TLSv1.2 with sessions, 2 RT</h4>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/Abbreviated_TLS_1.2_Handshake.svg" style="width:60%">
@@ -217,8 +226,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline16">
-<h4 id="orgheadline16">TLSv1.2 with false start</h4>
+<section id="slide-orgheadline17">
+<h4 id="orgheadline17">TLSv1.2 with false start</h4>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/TLS_False_Start.svg" style="width:60%">
@@ -227,8 +236,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline17">
-<h4 id="orgheadline17">Not good enough for Google</h4>
+<section id="slide-orgheadline18">
+<h4 id="orgheadline18">Not good enough for Google</h4>
 <ul>
 <li>Google wanted 0 RT <i>total</i></li>
 <li>QUIC: UDP-based, new crypto tricks</li>
@@ -237,8 +246,8 @@ Sorry, your browser does not support SVG.</object>
 </ul>
 
 </section>
-<section id="slide-orgheadline18">
-<h4 id="orgheadline18">TLSv1.3 base case, 2 RT</h4>
+<section id="slide-orgheadline19">
+<h4 id="orgheadline19">TLSv1.3 base case, 2 RT</h4>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/Full_TLS_1.3_Handshake.svg" style="width:60%">
@@ -247,8 +256,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline19">
-<h4 id="orgheadline19">TLSv1.3 happy PSK case, 2 RT</h4>
+<section id="slide-orgheadline20">
+<h4 id="orgheadline20">TLSv1.3 happy PSK case, 2 RT</h4>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/Abbreviated_TLS_1.3_Handshake.svg" style="width:60%">
@@ -257,8 +266,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline20">
-<h4 id="orgheadline20">TLSv1.3 happy 1 RTT case</h4>
+<section id="slide-orgheadline21">
+<h4 id="orgheadline21">TLSv1.3 happy 1 RTT case</h4>
 <p>
 <i>vigorous waving of hands</i>
 </p>
@@ -273,8 +282,8 @@ Sorry, your browser does not support SVG.</object>
 </ul>
 
 </section>
-<section id="slide-orgheadline21">
-<h4 id="orgheadline21">Bottom line</h4>
+<section id="slide-orgheadline22">
+<h4 id="orgheadline22">Bottom line</h4>
 <ul>
 <li>TLS is fast enough by default</li>
 <li>You have options if it isn't</li>
@@ -284,26 +293,26 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline33">
-<h2 id="orgheadline33">Certificates</h2>
-<div class="outline-text-2" id="text-orgheadline33">
+<section id="slide-orgheadline34">
+<h2 id="orgheadline34">Certificates</h2>
+<div class="outline-text-2" id="text-orgheadline34">
 </div></section>
-<section id="slide-orgheadline24">
-<h3 id="orgheadline24">Reminder: TLS gives you identity</h3>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25">Reminder: TLS gives you identity</h3>
 <p>
 You're talking to whom you think you're talking to.
 </p>
 
 </section>
-<section id="slide-orgheadline25">
-<h3 id="orgheadline25">Trust models</h3>
+<section id="slide-orgheadline26">
+<h3 id="orgheadline26">Trust models</h3>
 <p>
 Almost always: certificate authorities (CAs)
 </p>
 
 </section>
-<section id="slide-orgheadline26">
-<h3 id="orgheadline26">Big idea</h3>
+<section id="slide-orgheadline27">
+<h3 id="orgheadline27">Big idea</h3>
 <p>
 I don't trust you,
 </p>
@@ -324,19 +333,19 @@ Trust is not generally transitive!
 </aside>
 
 </section>
-<section id="slide-orgheadline28">
-<h3 id="orgheadline28">Where do you get CAs?</h3>
+<section id="slide-orgheadline29">
+<h3 id="orgheadline29">Where do you get CAs?</h3>
 <p>
 Comes with your {OS, browser, runtime&#x2026;}
 </p>
 
 </section>
-<section id="slide-orgheadline27">
-<h4 id="orgheadline27"><code>certifi</code></h4>
+<section id="slide-orgheadline28">
+<h4 id="orgheadline28"><code>certifi</code></h4>
 
 </section>
-<section id="slide-orgheadline30">
-<h3 id="orgheadline30">Example</h3>
+<section id="slide-orgheadline31">
+<h3 id="orgheadline31">Example</h3>
 
 <div class="figure">
 <p><img src="./media/RackspaceCertHierarchy.png" alt="RackspaceCertHierarchy.png" style="width:100%" />
@@ -344,28 +353,28 @@ Comes with your {OS, browser, runtime&#x2026;}
 </div>
 
 </section>
-<section id="slide-orgheadline29">
-<h4 id="orgheadline29">Underlying CA</h4>
+<section id="slide-orgheadline30">
+<h4 id="orgheadline30">Underlying CA</h4>
 
 
 
 </section>
-<section id="slide-orgheadline32">
-<h3 id="orgheadline32">A shady cabal if there ever was one</h3>
-<div class="outline-text-3" id="text-orgheadline32">
+<section id="slide-orgheadline33">
+<h3 id="orgheadline33">A shady cabal if there ever was one</h3>
+<div class="outline-text-3" id="text-orgheadline33">
 </div></section>
-<section id="slide-orgheadline31">
-<h4 id="orgheadline31">LetsEncrypt</h4>
+<section id="slide-orgheadline32">
+<h4 id="orgheadline32">LetsEncrypt</h4>
 
 </section>
 </section>
 <section>
-<section id="slide-orgheadline57">
-<h2 id="orgheadline57">Ciphersuites</h2>
-<div class="outline-text-2" id="text-orgheadline57">
+<section id="slide-orgheadline58">
+<h2 id="orgheadline58">Ciphersuites</h2>
+<div class="outline-text-2" id="text-orgheadline58">
 </div></section>
-<section id="slide-orgheadline34">
-<h3 id="orgheadline34">Remember the TLS handshake</h3>
+<section id="slide-orgheadline35">
+<h3 id="orgheadline35">Remember the TLS handshake</h3>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="./media/Full_TLS_1.2_Handshake.svg" style="width:60%">
@@ -374,8 +383,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-orgheadline35">
-<h3 id="orgheadline35">What's in a ciphersuite?</h3>
+<section id="slide-orgheadline36">
+<h3 id="orgheadline36">What's in a ciphersuite?</h3>
 <p>
 How do we:
 </p>
@@ -389,8 +398,8 @@ How do we:
 </ul>
 
 </section>
-<section id="slide-orgheadline36">
-<h3 id="orgheadline36">Signing</h3>
+<section id="slide-orgheadline37">
+<h3 id="orgheadline37">Signing</h3>
 <p>
 Public key is in your certificate
 </p>
@@ -408,15 +417,15 @@ You have to get a CA to sign it, most CAs don't sign ECDSAs.
 </aside>
 
 </section>
-<section id="slide-orgheadline43">
-<h3 id="orgheadline43">Key exchange</h3>
+<section id="slide-orgheadline44">
+<h3 id="orgheadline44">Key exchange</h3>
 <p>
 How do we agree on keys?
 </p>
 
 </section>
-<section id="slide-orgheadline37">
-<h4 id="orgheadline37">Perfect forward security</h4>
+<section id="slide-orgheadline38">
+<h4 id="orgheadline38">Perfect forward security</h4>
 <p>
 If a private key is compromised,
 </p>
@@ -437,19 +446,19 @@ But can they decrypt?
 </aside>
 
 </section>
-<section id="slide-orgheadline38">
-<h4 id="orgheadline38">Why non-PFS ciphersuites?</h4>
+<section id="slide-orgheadline39">
+<h4 id="orgheadline39">Why non-PFS ciphersuites?</h4>
 
 </section>
-<section id="slide-orgheadline39">
-<h4 id="orgheadline39">Used to be much slower</h4>
+<section id="slide-orgheadline40">
+<h4 id="orgheadline40">Used to be much slower</h4>
 <p>
 DHE is slow, but ECDHE is <i>fast</i>
 </p>
 
 </section>
-<section id="slide-orgheadline40">
-<h4 id="orgheadline40">It's not a bug, it's a feature!</h4>
+<section id="slide-orgheadline41">
+<h4 id="orgheadline41">It's not a bug, it's a feature!</h4>
 <p>
 Decrypting middleware, like WAFs
 </p>
@@ -462,15 +471,15 @@ These are just misconfigured, we should fix this
 </aside>
 
 </section>
-<section id="slide-orgheadline41">
-<h4 id="orgheadline41">Non-PFS is dying</h4>
+<section id="slide-orgheadline42">
+<h4 id="orgheadline42">Non-PFS is dying</h4>
 <p>
 TLSv1.3 does not support non-PFS suites!
 </p>
 
 </section>
-<section id="slide-orgheadline42">
-<h4 id="orgheadline42">Key exchange options</h4>
+<section id="slide-orgheadline43">
+<h4 id="orgheadline43">Key exchange options</h4>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -512,12 +521,12 @@ TLSv1.3 does not support non-PFS suites!
 </table>
 
 </section>
-<section id="slide-orgheadline46">
-<h3 id="orgheadline46">Bulk encryption</h3>
-<div class="outline-text-3" id="text-orgheadline46">
+<section id="slide-orgheadline47">
+<h3 id="orgheadline47">Bulk encryption</h3>
+<div class="outline-text-3" id="text-orgheadline47">
 </div></section>
-<section id="slide-orgheadline44">
-<h4 id="orgheadline44">Good options</h4>
+<section id="slide-orgheadline45">
+<h4 id="orgheadline45">Good options</h4>
 <ul>
 <li>AES</li>
 <li>ChaCha20</li>
@@ -525,8 +534,8 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline45">
-<h4 id="orgheadline45">Bad options</h4>
+<section id="slide-orgheadline46">
+<h4 id="orgheadline46">Bad options</h4>
 <ul>
 <li>EXP ("export grade")</li>
 <li>RC4</li>
@@ -535,12 +544,12 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline48">
-<h3 id="orgheadline48">MAC</h3>
-<div class="outline-text-3" id="text-orgheadline48">
+<section id="slide-orgheadline49">
+<h3 id="orgheadline49">MAC</h3>
+<div class="outline-text-3" id="text-orgheadline49">
 </div></section>
-<section id="slide-orgheadline47">
-<h4 id="orgheadline47">Good news</h4>
+<section id="slide-orgheadline48">
+<h4 id="orgheadline48">Good news</h4>
 <ul>
 <li>Usually don't have to worry</li>
 <li>Good bulk enc + recent TLS = good MAC</li>
@@ -548,12 +557,12 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline51">
-<h3 id="orgheadline51">AEAD</h3>
-<div class="outline-text-3" id="text-orgheadline51">
+<section id="slide-orgheadline52">
+<h3 id="orgheadline52">AEAD</h3>
+<div class="outline-text-3" id="text-orgheadline52">
 </div></section>
-<section id="slide-orgheadline49">
-<h4 id="orgheadline49">Combines encryption + MAC</h4>
+<section id="slide-orgheadline50">
+<h4 id="orgheadline50">Combines encryption + MAC</h4>
 <ul>
 <li>Mostly performance</li>
 <li>Arguably security</li>
@@ -561,8 +570,8 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline50">
-<h4 id="orgheadline50">Good options</h4>
+<section id="slide-orgheadline51">
+<h4 id="orgheadline51">Good options</h4>
 <ul>
 <li>GCM</li>
 <li>Maybe one day OCB</li>
@@ -570,8 +579,8 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline52">
-<h3 id="orgheadline52">How do you pick ciphersuites?</h3>
+<section id="slide-orgheadline53">
+<h3 id="orgheadline53">How do you pick ciphersuites?</h3>
 <ul>
 <li><a href="https://wiki.mozilla.org/Security/Server_Side_TLS">https://wiki.mozilla.org/Security/Server_Side_TLS</a></li>
 <li>Sometimes depends on your clients</li>
@@ -579,8 +588,8 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline53">
-<h3 id="orgheadline53">High-level advice</h3>
+<section id="slide-orgheadline54">
+<h3 id="orgheadline54">High-level advice</h3>
 <ul>
 <li><code>!EXP</code></li>
 <li><code>!RC4</code></li>
@@ -590,19 +599,19 @@ TLSv1.3 does not support non-PFS suites!
 </ul>
 
 </section>
-<section id="slide-orgheadline56">
-<h3 id="orgheadline56">Auditing TLS configuration</h3>
-<div class="outline-text-3" id="text-orgheadline56">
+<section id="slide-orgheadline57">
+<h3 id="orgheadline57">Auditing TLS configuration</h3>
+<div class="outline-text-3" id="text-orgheadline57">
 </div></section>
-<section id="slide-orgheadline54">
-<h4 id="orgheadline54">Qualys' SSLTest</h4>
+<section id="slide-orgheadline55">
+<h4 id="orgheadline55">Qualys' SSLTest</h4>
 <p>
 <a href="https://www.ssllabs.com/ssltest/analyze.html">https://www.ssllabs.com/ssltest/analyze.html</a>
 </p>
 
 </section>
-<section id="slide-orgheadline55">
-<h4 id="orgheadline55">But my website is internal!</h4>
+<section id="slide-orgheadline56">
+<h4 id="orgheadline56">But my website is internal!</h4>
 <p>
 <a href="https://github.com/nabla-c0d3/sslyze">https://github.com/nabla-c0d3/sslyze</a>
 </p>
@@ -617,19 +626,19 @@ Not prescriptive :(
 </section>
 </section>
 <section>
-<section id="slide-orgheadline68">
-<h2 id="orgheadline68">Clients</h2>
-<div class="outline-text-2" id="text-orgheadline68">
+<section id="slide-orgheadline69">
+<h2 id="orgheadline69">Clients</h2>
+<div class="outline-text-2" id="text-orgheadline69">
 </div></section>
-<section id="slide-orgheadline58">
-<h3 id="orgheadline58">What does a TLS client do?</h3>
+<section id="slide-orgheadline59">
+<h3 id="orgheadline59">What does a TLS client do?</h3>
 <p>
 Pretty much just verify the cert
 </p>
 
 </section>
-<section id="slide-orgheadline59">
-<h3 id="orgheadline59">What does "verify" mean?</h3>
+<section id="slide-orgheadline60">
+<h3 id="orgheadline60">What does "verify" mean?</h3>
 <p>
 It's complicated, but, roughly:
 </p>
@@ -642,19 +651,19 @@ It's complicated, but, roughly:
 </ul>
 
 </section>
-<section id="slide-orgheadline64">
-<h3 id="orgheadline64">How do I verify a cert?</h3>
+<section id="slide-orgheadline65">
+<h3 id="orgheadline65">How do I verify a cert?</h3>
 <p>
 Ooooh boy.
 </p>
 
 </section>
-<section id="slide-orgheadline60">
-<h4 id="orgheadline60">So much software gets it wrong</h4>
+<section id="slide-orgheadline61">
+<h4 id="orgheadline61">So much software gets it wrong</h4>
 
 </section>
-<section id="slide-orgheadline61">
-<h4 id="orgheadline61">Python stdlib</h4>
+<section id="slide-orgheadline62">
+<h4 id="orgheadline62">Python stdlib</h4>
 <p>
 <b>17.3.7.2.1. Verifying certificates</b>
 </p>
@@ -665,8 +674,8 @@ default.
 </p>
 
 </section>
-<section id="slide-orgheadline62">
-<h4 id="orgheadline62">Big problem</h4>
+<section id="slide-orgheadline63">
+<h4 id="orgheadline63">Big problem</h4>
 <ul>
 <li>Current state often better, but old software</li>
 <li>Current docs often better, but old skills</li>
@@ -674,50 +683,50 @@ default.
 </ul>
 
 </section>
-<section id="slide-orgheadline63">
-<h4 id="orgheadline63"><code>service_identity</code></h4>
+<section id="slide-orgheadline64">
+<h4 id="orgheadline64"><code>service_identity</code></h4>
 
 </section>
-<section id="slide-orgheadline67">
-<h3 id="orgheadline67">Playing around with clients</h3>
-<div class="outline-text-3" id="text-orgheadline67">
+<section id="slide-orgheadline68">
+<h3 id="orgheadline68">Playing around with clients</h3>
+<div class="outline-text-3" id="text-orgheadline68">
 </div></section>
-<section id="slide-orgheadline65">
-<h4 id="orgheadline65">Using requests</h4>
+<section id="slide-orgheadline66">
+<h4 id="orgheadline66">Using requests</h4>
 <p>
 Easy! Fun! Probably safe!
 </p>
 
 </section>
-<section id="slide-orgheadline66">
-<h4 id="orgheadline66">Using Twisted endpoints</h4>
+<section id="slide-orgheadline67">
+<h4 id="orgheadline67">Using Twisted endpoints</h4>
 
 </section>
 </section>
 <section>
+<section id="slide-orgheadline71">
+<h2 id="orgheadline71">Servers</h2>
+<div class="outline-text-2" id="text-orgheadline71">
+</div></section>
 <section id="slide-orgheadline70">
-<h2 id="orgheadline70">Servers</h2>
-<div class="outline-text-2" id="text-orgheadline70">
-</div></section>
-<section id="slide-orgheadline69">
-<h3 id="orgheadline69">Configuring TLS servers</h3>
+<h3 id="orgheadline70">Configuring TLS servers</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-orgheadline91">
-<h2 id="orgheadline91">Cert pinning</h2>
-<div class="outline-text-2" id="text-orgheadline91">
+<section id="slide-orgheadline92">
+<h2 id="orgheadline92">Cert pinning</h2>
+<div class="outline-text-2" id="text-orgheadline92">
 </div></section>
-<section id="slide-orgheadline76">
-<h3 id="orgheadline76">Reminder: CAs are your trust root</h3>
+<section id="slide-orgheadline77">
+<h3 id="orgheadline77">Reminder: CAs are your trust root</h3>
 <p>
 You trust <i>x</i> is <i>x</i> because a CA said so
 </p>
 
 </section>
-<section id="slide-orgheadline71">
-<h4 id="orgheadline71">Rogue CA?</h4>
+<section id="slide-orgheadline72">
+<h4 id="orgheadline72">Rogue CA?</h4>
 
 <div class="figure">
 <p><img src="./media/CNNICRootCA.png" alt="CNNICRootCA.png" style="width:80%" />
@@ -725,8 +734,8 @@ You trust <i>x</i> is <i>x</i> because a CA said so
 </div>
 
 </section>
-<section id="slide-orgheadline72">
-<h4 id="orgheadline72">Planted root CA?</h4>
+<section id="slide-orgheadline73">
+<h4 id="orgheadline73">Planted root CA?</h4>
 <ul>
 <li>Part of an attack</li>
 <li>Mandated by employer</li>
@@ -734,30 +743,30 @@ You trust <i>x</i> is <i>x</i> because a CA said so
 </ul>
 
 </section>
-<section id="slide-orgheadline73">
-<h4 id="orgheadline73">Mandated by employer?</h4>
+<section id="slide-orgheadline74">
+<h4 id="orgheadline74">Mandated by employer?</h4>
 <p>
 Having internal CA makes sense
 </p>
 
 </section>
-<section id="slide-orgheadline74">
-<h4 id="orgheadline74">Name constraints</h4>
+<section id="slide-orgheadline75">
+<h4 id="orgheadline75">Name constraints</h4>
 
 </section>
-<section id="slide-orgheadline75">
-<h4 id="orgheadline75">Forgery as a Service</h4>
+<section id="slide-orgheadline76">
+<h4 id="orgheadline76">Forgery as a Service</h4>
 <p>
 e.g sslbump
 </p>
 
 </section>
-<section id="slide-orgheadline80">
-<h3 id="orgheadline80">Cert pinning</h3>
-<div class="outline-text-3" id="text-orgheadline80">
+<section id="slide-orgheadline81">
+<h3 id="orgheadline81">Cert pinning</h3>
+<div class="outline-text-3" id="text-orgheadline81">
 </div></section>
-<section id="slide-orgheadline77">
-<h4 id="orgheadline77">Babylonian confusion</h4>
+<section id="slide-orgheadline78">
+<h4 id="orgheadline78">Babylonian confusion</h4>
 <ul>
 <li>Sometimes means "trust exactly this cert"</li>
 <li>Sometimes, you have to rotate a key</li>
@@ -765,76 +774,76 @@ e.g sslbump
 </ul>
 
 </section>
-<section id="slide-orgheadline78">
-<h4 id="orgheadline78">GMail should be signed by Google</h4>
+<section id="slide-orgheadline79">
+<h4 id="orgheadline79">GMail should be signed by Google</h4>
 <p>
 Browsers (esp. Chrome) should know this
 </p>
 
 </section>
-<section id="slide-orgheadline79">
-<h4 id="orgheadline79">Forgery as a Service</h4>
+<section id="slide-orgheadline80">
+<h4 id="orgheadline80">Forgery as a Service</h4>
 
 </section>
-<section id="slide-orgheadline87">
-<h3 id="orgheadline87">HSTS</h3>
+<section id="slide-orgheadline88">
+<h3 id="orgheadline88">HSTS</h3>
 <p>
 HTTP Strict Transport Security
 </p>
 
 </section>
-<section id="slide-orgheadline81">
-<h4 id="orgheadline81">Some sites should always HTTPS</h4>
+<section id="slide-orgheadline82">
+<h4 id="orgheadline82">Some sites should always HTTPS</h4>
 <p>
 Browsers should know this
 </p>
 
 </section>
-<section id="slide-orgheadline82">
-<h4 id="orgheadline82">HSTS header</h4>
+<section id="slide-orgheadline83">
+<h4 id="orgheadline83">HSTS header</h4>
 <p>
 <code>Strict-Transport-Security: max-age=31536000</code>
 </p>
 
 </section>
-<section id="slide-orgheadline83">
-<h4 id="orgheadline83">Opt-in!</h4>
-
-</section>
 <section id="slide-orgheadline84">
-<h4 id="orgheadline84">Only works on next-use</h4>
+<h4 id="orgheadline84">Opt-in!</h4>
 
 </section>
 <section id="slide-orgheadline85">
-<h4 id="orgheadline85">HSTS preloading</h4>
+<h4 id="orgheadline85">Only works on next-use</h4>
+
+</section>
+<section id="slide-orgheadline86">
+<h4 id="orgheadline86">HSTS preloading</h4>
 <p>
 Used by all major browsers
 </p>
 
 </section>
-<section id="slide-orgheadline86">
-<h4 id="orgheadline86">Opt-in</h4>
+<section id="slide-orgheadline87">
+<h4 id="orgheadline87">Opt-in</h4>
 <p>
 <code>Strict-Transport-Security: max-age=31536000; preload</code>
 </p>
 
 </section>
-<section id="slide-orgheadline90">
-<h3 id="orgheadline90">HPKP</h3>
+<section id="slide-orgheadline91">
+<h3 id="orgheadline91">HPKP</h3>
 <p>
 HTTP Public Key Pinning
 </p>
 
 </section>
-<section id="slide-orgheadline88">
-<h4 id="orgheadline88">DigiCert is my CA, not the DoD</h4>
+<section id="slide-orgheadline89">
+<h4 id="orgheadline89">DigiCert is my CA, not the DoD</h4>
 <p>
 Browsers should know this
 </p>
 
 </section>
-<section id="slide-orgheadline89">
-<h4 id="orgheadline89">Specify which CA(s) in HSTS</h4>
+<section id="slide-orgheadline90">
+<h4 id="orgheadline90">Specify which CA(s) in HSTS</h4>
 <p>
 Early stages!
 </p>
@@ -849,20 +858,20 @@ Early stages!
 </section>
 </section>
 <section>
-<section id="slide-orgheadline101">
-<h2 id="orgheadline101">Alternative trust chains</h2>
-<div class="outline-text-2" id="text-orgheadline101">
+<section id="slide-orgheadline102">
+<h2 id="orgheadline102">Alternative trust chains</h2>
+<div class="outline-text-2" id="text-orgheadline102">
 </div></section>
-<section id="slide-orgheadline94">
-<h3 id="orgheadline94">Self-signed certs</h3>
-<div class="outline-text-3" id="text-orgheadline94">
+<section id="slide-orgheadline95">
+<h3 id="orgheadline95">Self-signed certs</h3>
+<div class="outline-text-3" id="text-orgheadline95">
 </div></section>
-<section id="slide-orgheadline92">
-<h4 id="orgheadline92">Problem: key rotation</h4>
+<section id="slide-orgheadline93">
+<h4 id="orgheadline93">Problem: key rotation</h4>
 
 </section>
-<section id="slide-orgheadline93">
-<h4 id="orgheadline93">Conclusion</h4>
+<section id="slide-orgheadline94">
+<h4 id="orgheadline94">Conclusion</h4>
 <ul>
 <li>Probably not</li>
 <li>Must control client, server deploys in lockstep</li>
@@ -870,12 +879,12 @@ Early stages!
 </ul>
 
 </section>
-<section id="slide-orgheadline100">
-<h3 id="orgheadline100">Running your own internal CA</h3>
-<div class="outline-text-3" id="text-orgheadline100">
+<section id="slide-orgheadline101">
+<h3 id="orgheadline101">Running your own internal CA</h3>
+<div class="outline-text-3" id="text-orgheadline101">
 </div></section>
-<section id="slide-orgheadline95">
-<h4 id="orgheadline95">CAs aren't magic</h4>
+<section id="slide-orgheadline96">
+<h4 id="orgheadline96">CAs aren't magic</h4>
 <p>
 <code>CA=true</code>
 </p>
@@ -887,15 +896,15 @@ Early stages!
 </div>
 
 </section>
-<section id="slide-orgheadline96">
-<h4 id="orgheadline96">We can do that ourselves!</h4>
+<section id="slide-orgheadline97">
+<h4 id="orgheadline97">We can do that ourselves!</h4>
 <p>
 &#x2026; just gotta trust my root cert
 </p>
 
 </section>
-<section id="slide-orgheadline97">
-<h4 id="orgheadline97">Freedom in issuing certs</h4>
+<section id="slide-orgheadline98">
+<h4 id="orgheadline98">Freedom in issuing certs</h4>
 <ul>
 <li>ECDSA? Sure!</li>
 <li>1000 client certs? Sure!</li>
@@ -903,15 +912,15 @@ Early stages!
 </ul>
 
 </section>
-<section id="slide-orgheadline98">
-<h4 id="orgheadline98">Protection against rogue CA</h4>
+<section id="slide-orgheadline99">
+<h4 id="orgheadline99">Protection against rogue CA</h4>
 <p>
 Mossad threat model
 </p>
 
 </section>
-<section id="slide-orgheadline99">
-<h4 id="orgheadline99">Operational challenges</h4>
+<section id="slide-orgheadline100">
+<h4 id="orgheadline100">Operational challenges</h4>
 <p>
 How securely can you run a CA?
 </p>
@@ -919,12 +928,12 @@ How securely can you run a CA?
 </section>
 </section>
 <section>
-<section id="slide-orgheadline106">
-<h2 id="orgheadline106">Client certificates</h2>
-<div class="outline-text-2" id="text-orgheadline106">
+<section id="slide-orgheadline107">
+<h2 id="orgheadline107">Client certificates</h2>
+<div class="outline-text-2" id="text-orgheadline107">
 </div></section>
-<section id="slide-orgheadline105">
-<h3 id="orgheadline105">Recap: "normal" TLS</h3>
+<section id="slide-orgheadline106">
+<h3 id="orgheadline106">Recap: "normal" TLS</h3>
 <ul>
 <li>Server is authenticated by TLS (certificate)</li>
 <li>Client is <i>not</i> authenticated by TLS</li>
@@ -937,22 +946,22 @@ How securely can you run a CA?
 </ul>
 
 </section>
-<section id="slide-orgheadline102">
-<h4 id="orgheadline102">Alternative: client certificates</h4>
+<section id="slide-orgheadline103">
+<h4 id="orgheadline103">Alternative: client certificates</h4>
 <p>
 Both peers exchange &amp; verify certs
 </p>
 
 </section>
-<section id="slide-orgheadline103">
-<h4 id="orgheadline103">Who signs your certs?</h4>
+<section id="slide-orgheadline104">
+<h4 id="orgheadline104">Who signs your certs?</h4>
 <p>
 Probably need your own CA
 </p>
 
 </section>
-<section id="slide-orgheadline104">
-<h4 id="orgheadline104">Client library support</h4>
+<section id="slide-orgheadline105">
+<h4 id="orgheadline105">Client library support</h4>
 <p>
 Usually possible, rarely obvious
 </p>
@@ -960,15 +969,15 @@ Usually possible, rarely obvious
 </section>
 </section>
 <section>
-<section id="slide-orgheadline111">
-<h2 id="orgheadline111">SNI</h2>
+<section id="slide-orgheadline112">
+<h2 id="orgheadline112">SNI</h2>
 <p>
 (Server Name Indication)
 </p>
 
 </section>
-<section id="slide-orgheadline107">
-<h3 id="orgheadline107">Problem</h3>
+<section id="slide-orgheadline108">
+<h3 id="orgheadline108">Problem</h3>
 <ul>
 <li>Client connects to website, looks up IP</li>
 <li>Expects TLS with cert for correct <i>hostname</i></li>
@@ -977,8 +986,8 @@ Usually possible, rarely obvious
 </ul>
 
 </section>
-<section id="slide-orgheadline108">
-<h3 id="orgheadline108">Historical reason TLS is expensive</h3>
+<section id="slide-orgheadline109">
+<h3 id="orgheadline109">Historical reason TLS is expensive</h3>
 <ul>
 <li>1 site per public IPv4 address</li>
 <li>IPv4 addresses are expensive</li>
@@ -987,12 +996,12 @@ Usually possible, rarely obvious
 </ul>
 
 </section>
-<section id="slide-orgheadline109">
-<h3 id="orgheadline109">No longer true!</h3>
+<section id="slide-orgheadline110">
+<h3 id="orgheadline110">No longer true!</h3>
 
 </section>
-<section id="slide-orgheadline110">
-<h3 id="orgheadline110">Example: txsni</h3>
+<section id="slide-orgheadline111">
+<h3 id="orgheadline111">Example: txsni</h3>
 <div class="org-src-container">
 
 <pre  class="src src-sh">mkdir certificates
@@ -1009,8 +1018,8 @@ twistd -n web --port txsni:certificates:tcp:443
 </section>
 </section>
 <section>
-<section id="slide-orgheadline112">
-<h2 id="orgheadline112">Debugging TLS connections</h2>
+<section id="slide-orgheadline113">
+<h2 id="orgheadline113">Debugging TLS connections</h2>
 <p>
 <a href="https://lukasa.co.uk/2016/01/Debugging_With_Wireshark_TLS/">https://lukasa.co.uk/2016/01/Debugging_With_Wireshark_TLS/</a>
 </p>
@@ -1018,12 +1027,12 @@ twistd -n web --port txsni:certificates:tcp:443
 </section>
 </section>
 <section>
-<section id="slide-orgheadline119">
-<h2 id="orgheadline119">Challenges for existing organizations</h2>
-<div class="outline-text-2" id="text-orgheadline119">
+<section id="slide-orgheadline120">
+<h2 id="orgheadline120">Challenges for existing organizations</h2>
+<div class="outline-text-2" id="text-orgheadline120">
 </div></section>
-<section id="slide-orgheadline114">
-<h3 id="orgheadline114">Software</h3>
+<section id="slide-orgheadline115">
+<h3 id="orgheadline115">Software</h3>
 <ul>
 <li>Software written <i>n</i> years ago</li>
 <li>Running on RHEL5.ancient</li>
@@ -1031,19 +1040,19 @@ twistd -n web --port txsni:certificates:tcp:443
 </ul>
 
 </section>
-<section id="slide-orgheadline113">
-<h4 id="orgheadline113">Solution</h4>
+<section id="slide-orgheadline114">
+<h4 id="orgheadline114">Solution</h4>
 <p>
 Accept that software ages
 </p>
 
 </section>
-<section id="slide-orgheadline116">
-<h3 id="orgheadline116">Knowledge</h3>
-<div class="outline-text-3" id="text-orgheadline116">
+<section id="slide-orgheadline117">
+<h3 id="orgheadline117">Knowledge</h3>
+<div class="outline-text-3" id="text-orgheadline117">
 </div></section>
-<section id="slide-orgheadline115">
-<h4 id="orgheadline115">Solution</h4>
+<section id="slide-orgheadline116">
+<h4 id="orgheadline116">Solution</h4>
 <ul>
 <li>Hopefully talks like these 😉</li>
 <li>Access to experts</li>
@@ -1051,15 +1060,15 @@ Accept that software ages
 </ul>
 
 </section>
-<section id="slide-orgheadline118">
-<h3 id="orgheadline118">Legacy systems</h3>
+<section id="slide-orgheadline119">
+<h3 id="orgheadline119">Legacy systems</h3>
 <p>
 Risk mitigation is unpopular
 </p>
 
 </section>
-<section id="slide-orgheadline117">
-<h4 id="orgheadline117">Solution</h4>
+<section id="slide-orgheadline118">
+<h4 id="orgheadline118">Solution</h4>
 <ul>
 <li>Explain risks better?</li>
 <li>More TLS scandals?</li>
