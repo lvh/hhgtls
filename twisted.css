@@ -1,6 +1,7 @@
 
 .reveal .slides .busted-vs-hotness th, .reveal .slides .busted-vs-hotness td {
     text-align: center;
+    padding: 0.4em;
 }
 .reveal .slides .busted-vs-hotness small {
     display: block;
@@ -9,6 +10,7 @@
     font-size: 0.83em;
     /* width: 10px; */
 }
+
 .reveal .slides .busted-vs-hotness tr>th:nth-child(1) {
     font-weight: normal;
     background-color: rgb(128, 64, 0);
@@ -26,4 +28,9 @@
 .reveal .slides .busted-vs-hotness tr>td:nth-child(2) {
     /*hotness*/
     color: red;
+    border-left: 1px solid black;
+}
+
+.reveal .slides section pre code {
+    padding: 2em;
 }

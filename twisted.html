@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./reveal.js/css/theme/rackspace.css"
           id="theme"/>
     <link rel="stylesheet" href="twisted.css"/>
+    <link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css">
     <link rel="stylesheet" href=""/>
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -27,9 +28,13 @@
           <h1>Twisted Clients</h1>
         </section>
         <section>
-          <h1 class="fragment">Those Who Do Not</h1>
-          <h1 class="fragment">Understand History</h1>
-          <h3 class="fragment">Are Doomed To <strong><em>Unverified TLS</em></strong></h3>
+          <h3>Twisted Tries To</h3>
+          <h1>Do The Right Thing</h1>
+        </section>
+        <section data-autoslide="500">
+          <h1 data-autoslide="none" class="fragment">Those Who Do Not</h1>
+          <h1 data-autoslide="none" class="fragment">Understand History</h1>
+          <h3 data-autoslide="none" class="fragment">Are Doomed To <strong><em>Unverified TLS</em></strong></h3>
         </section>
         <section>
           <table class="busted-vs-hotness">
@@ -107,7 +112,270 @@
             </tr>
           </table>
         </section>
+        <section>
+          <h1>The 90% Solution</h1>
+          <h2>Just Use <code>treq</code></h2>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ python -m virtualenv use_treq
+$ . use_treq/bin/activate
+$ pip install treq
+...
+Successfully installed Twisted-15.5.0 attrs-15.2.0 cffi-1.5.2
+cryptography-1.2.2 enum34-1.1.2 idna-2.0 ipaddress-1.0.16 pyOpenSSL-0.15.1
+pyasn1-0.1.9 pyasn1-modules-0.0.8 pycparser-2.14 requests-2.9.1
+service-identity-16.0.0 six-1.10.0 treq-15.1.0 zope.interface-4.1.3
+</code></pre>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>from twisted.internet import task, defer
+
+import treq
+
+@task.react
+@defer.inlineCallbacks
+def main(reactor):
+    response = yield treq.get('https://example.com/')
+    print("got code: {}".format(response.code))
+
+    body = yield treq.content(response)
+    print("got {} bytes".format(len(body)))</code></pre>
+        </section>
+        <section>
+          <h1>Internal APIs</h1>
+        </section>
+        <section>
+          <div class="fragment none" style="position: absolute; left: 10%; font-size: 200px; font-weight: bold; font-style: oblique; color: white; background-color: red; padding-left: 1em; padding-right: 1em; transform: rotateZ(15deg)">NO</div>
+          <h1>Disabling Verification</h1>
+        </section>
+        <section>
+          <h1>Custom Trust</h1>
+        </section>
+        <section>
+          <h3>Step 1</h3>
+          <h1>Get A Trust Root</h1>
+        </section>
+        <section data-transition="none">
+          <img class="fragment fade-in" src="./root_extract_pics/1.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/1.5.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/2.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/2.5.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/3.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/4.png">
+        </section>
+        <section data-transition="none">
+          <img src="./root_extract_pics/4.5.png"
+               class="fragment fade-out">
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ openssl x509 \
+    -inform der -outform pem \
+    -in Desktop/DigiCert\ High\ Assurance\ EV\ Root\ CA.cer \
+    -out ca.pem</code></pre>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ ls *.pem
+digicert-ev.pem startcom.pem</code></pre>
+        </section>
+        <section>
+          <h3>Step 2</h3>
+          <h2>Load the Trust Root</h2>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>from twisted.internet import ssl
+with open("digicert.pem") as f:
+    octets = f.read()
+    ssl.Certificate.loadPEM(octets)</code></pre>
+        </section>
+        <section>
+          <h3>Step 3</h3>
+          <h2>Tell Your Client</h2>
+          <h2>Who To Trust</h2>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>import treq
+from twisted.web.client.Agent
+client = treq.client.HTTPClient(Agent(reactor, CustomPolicy()))
+</code></pre>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>from twisted.web.iweb import IPolicyForHTTPS
+from zope.interface import implementer
+@implementer(IPolicyForHTTPS)
+class CustomPolicy(object):
+    def creatorForNetloc(self, host, port):
+        return optionsForClientTLS(host, ...)</code></pre>
+        </section>
+        <section>
+          <h3>Step 4</h3>
+          <h1>Put It Together</h1>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>from twisted.internet import defer, task, ssl
+from twisted.web import client, iweb
+from zope.interface import implementer
+import sys, treq
+@task.react
+@defer.inlineCallbacks
+def main(reactor):
+    with open(sys.argv[1]) as f: root = ssl.Certificate.loadPEM(f.read())
+    @implementer(iweb.IPolicyForHTTPS)
+    class OneTrust(object):
+        def creatorForNetloc(self, host, port):
+            return ssl.optionsForClientTLS(host.decode("ascii"), root)
+    treqish = treq.client.HTTPClient(client.Agent(reactor, OneTrust()))
+    response = yield treqish.get('https://example.com/')
+    print("got code: {}".format(response.code))
+    body = yield treq.content(response)
+    print("got {} bytes".format(len(body)))</code></pre>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ python treq_custom_trust.py startcom.pem
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.web._newclient.ResponseNeverReceived:
+[&lt;twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines',
+'ssl3_get_server_certificate', 'certificate verify failed')]>]
+
+$ python treq_custom_trust.py digicert-ev.pem
+got code: 200
+got 1270 bytes</code></pre>
+        </section>
+        <section>
+          <h1>Client Endpoints</h1>
+          <h3>(Things Other Than HTTP)</h3>
+        </section>
+        <section>
+          <h6>(New In 16.0)</h6>
+          <pre><code class="language-console"
+>$ pip install https://github.com/twisted/twisted/archive/trunk.zip</code></pre>
+          <pre><code
+>from twisted.internet import task, endpoints, defer, protocol
+@task.react
+@defer.inlineCallbacks
+def main(reactor):
+    endpoint = endpoints.clientFromString(reactor,
+                                          "tls:chat.freenode.net:6697")
+    done = defer.Deferred()
+    class Printer(protocol.Protocol):
+        def dataReceived(self, data):
+            print(repr(data))
+        def connectionLost(self, reason):
+            done.callback(reason)
+    yield endpoint.connect(protocol.Factory.forProtocol(Printer))
+    yield done</code></pre>
+        </section>
         <section id="inbound">
+          <h1>Twisted Servers</h1>
+        </section>
+        <section>
+          <table class="busted-vs-hotness">
+            <tr>
+              <th>
+                Old and Busted
+              </th>
+              <th>
+                New Hotness
+              </th>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <code>
+                  ContextFactory
+                </code>
+                <code>
+                  DefaultOpenSSLContextFactory
+                </code>
+              </td>
+              <td>
+                <code>
+                  CertificateOptions
+                </code>
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <code>
+                  listenSSL
+                </code>
+              </td>
+              <td>
+                <div>
+                  <code>serverFromString</code>
+                </div>
+                <div>
+                  <code>strports.service</code>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h1>Basic TLS</h1>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ twistd -n web --path /var/www --port \
+ssl:port=443:\
+certKey=/etc/ssl/my-cert.pem:\
+privateKey=/etc/ssl/private/my-private-key.pem:\
+extraCertChain=my-chain.pem</code></pre>
+        </section>
+        <section>
+          <h2>"3rd"-party Plug-In</h2>
+          <h1>TxSNI</h1>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ pip install txsni
+</code></pre>
+        </section>
+        <section>
+          <ul>
+            <li class="fragment">Make a directory for certificates</li>
+            <li class="fragment">Name files after domain names, with <code>.pem</code> suffix</li>
+            <li class="fragment">put certificate, private key, chain into each file</li>
+            <li class="fragment">make a DEFAULT.pem for non-SNI clients</li>
+          </ul>
+        </section>
+        <section>
+          <pre><code class="language-console"
+>$ mkdir certificates
+$ cat private-stuff/mydomain.key.pem >> certificates/mydomain.example.com.pem
+$ cat public-stuff/mydomain.crt.pem >> certificates/mydomain.example.com.pem
+$ cat public-stuff/my-certificate-authority-chain.crt.pem >> \
+    certificates/mydomain.example.com.pem
+$ twistd -n web --port txsni:certificates:tcp:443</code></pre>
+        </section>
+        <section>
+          <h1>in the code...</h1>
+        </section>
+        <section>
+          <pre><code class="language-python"
+>from twisted.web.server import Site
+from twisted.application import strports
+service = strports.service("txsni:certificates:...", Site(...),
+                           reactor=reactor)
+service.startService()</code></pre>
         </section>
       </div>
     </div>
@@ -143,7 +411,8 @@ dependencies: [
  { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
  { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
  { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+{ src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: './reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }]
 });
 </script>
   </body>
