@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The Hitchhiker's Guide to (Twisted) TLS</title>
+    <meta name="author" content="(glyphe)"/>
+    <link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+    <link rel="stylesheet" href="./reveal.js/css/theme/rackspace.css"
+          id="theme"/>
+    <link rel="stylesheet" href="twisted.css"/>
+    <link rel="stylesheet" href=""/>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = './reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="outbound">
+          <h1>Twisted Clients</h1>
+        </section>
+        <section>
+          <h1 class="fragment">Those Who Do Not</h1>
+          <h1 class="fragment">Understand History</h1>
+          <h3 class="fragment">Are Doomed To <strong><em>Unverified TLS</em></strong></h3>
+        </section>
+        <section>
+          <table class="busted-vs-hotness">
+            <tr>
+              <th>
+                Old and Busted
+              </th>
+              <th>
+                New Hotness
+              </th>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <code>
+                  ClientContextFactory
+                </code>
+              </td>
+              <td>
+                <code>
+                  optionsForClientTLS
+                </code>
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <small><code>
+                  twisted.web.client
+                </code></small>
+                <code>
+                  getPage
+                </code>
+              </td>
+              <td>
+                <small><code>
+                  twisted.web.client
+                </code></small>
+                <code>Agent</code>
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>
+                &quot;
+              </td>
+              <td>
+                <code>
+                  treq.get
+                </code>
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <small><code>
+                  twisted.web.client
+                </code></small>
+                <code>
+                  WebClientContextFactory
+                </code>
+              </td>
+              <td>
+                <small><code>
+                  twisted.web.client
+                </code></small>
+                <code>
+                  BrowserLikePolicyForHTTPS
+                </code>
+              </td>
+            </tr>
+            <tr class="fragment">
+              <td>
+                <code><em>"ssl:"</em></code> <br>string endpoint
+              </td>
+              <td>
+                <code><em>"tls:"</em></code> <br>string endpoint
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="inbound">
+        </section>
+      </div>
+    </div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+  </body>
+</html>
