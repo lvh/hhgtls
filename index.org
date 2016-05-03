@@ -99,10 +99,6 @@
 
    and I trust the CA.
 
-   #+BEGIN_NOTES
-   Trust is not generally transitive!
-   #+END_NOTES
-
 ** Where do you get CAs?
 
    Comes with your {OS, browser, runtime...}
