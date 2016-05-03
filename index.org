@@ -81,24 +81,6 @@
     * Lots of export-grade crypto
     * /Still/ the thing you want, I promise
 
-** Why not TLS everywhere?
-
-   * TLS is slow :(
-   * Certs are a scam/hard/expensive :(
-   * TLS uses up an IPv4 addr :(
-   * TLS is insecure :(
-   * Configuring TLS is hard :(
-   * We don't really need TLS
-
-*** Goal of this presentation
-
-   * TLS is pretty snappy
-   * Certs are free† and usually easy
-   * You do not need a dedicated IPv4 addr
-   * TLS is your best bet
-   * Configuring TLS is pretty easy
-   * No, you definitely need TLS
-
 * Certificates
 
 ** Reminder: TLS gives you identity
