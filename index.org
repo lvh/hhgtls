@@ -462,30 +462,3 @@
 * Debugging TLS connections
 
   https://lukasa.co.uk/2016/01/Debugging_With_Wireshark_TLS/
-
-* Challenges for existing organizations
-
-** Software
-
-   * Software written /n/ years ago
-   * Running on RHEL5.ancient
-
-*** Solution
-
-    Accept that software ages
-
-** Knowledge
-
-*** Solution
-
-    * Hopefully talks like these 😉
-    * Access to experts
-
-** Legacy systems
-
-   Risk mitigation is unpopular
-
-*** Solution
-
-    * Explain risks better?
-    * More TLS scandals?
