@@ -116,8 +116,6 @@
 
 *** Underlying CA
 
-
-
 ** A shady cabal if there ever was one
 
 *** LetsEncrypt
