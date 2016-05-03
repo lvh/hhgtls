@@ -99,62 +99,6 @@
    * Configuring TLS is pretty easy
    * No, you definitely need TLS
 
-** Why do people think TLS is slow?
-
-*** TLS in your stack
-
-    #+ATTR_REVEAL: :frag (roll-in)
-    * Application (e.g. HTTP)
-    * TLS
-    * TCP/IP
-    * Turtles (all the way down)
-
-*** TLSv1.2 worst-case, 3 RT
-
-   #+ATTR_HTML: :style width:60%
-   [[./media/Full_TLS_1.2_Handshake.svg]]
-
-*** TLSv1.2 with sessions, 2 RT
-
-   #+ATTR_HTML: :style width:60%
-   [[./media/Abbreviated_TLS_1.2_Handshake.svg]]
-
-*** TLSv1.2 with false start
-
-   #+ATTR_HTML: :style width:60%
-   [[./media/TLS_False_Start.svg]]
-
-*** Not good enough for Google
-
-    * Google wanted 0 RT /total/
-    * QUIC: UDP-based, new crypto tricks
-    * Deeply influenced TLSv1.3
-
-*** TLSv1.3 base case, 2 RT
-
-   #+ATTR_HTML: :style width:60%
-   [[./media/Full_TLS_1.3_Handshake.svg]]
-
-*** TLSv1.3 happy PSK case, 2 RT
-
-   #+ATTR_HTML: :style width:60%
-   [[./media/Abbreviated_TLS_1.3_Handshake.svg]]
-
-*** TLSv1.3 happy 1 RTT case
-
-    /vigorous waving of hands/
-
-    * No extra latency!
-    * Needs application changes
-    * First data might be replayable
-    * More caveats and asterisks
-    * Still TCP round-trip (QUIC is UDP)
-
-*** Bottom line
-
-    * TLS is fast enough by default
-    * You have options if it isn't
-
 * Certificates
 
 ** Reminder: TLS gives you identity
