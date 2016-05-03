@@ -14,27 +14,27 @@
 
 ** Glyph Lefkowitz
 
-   Senior Software Engineer, IPA
+   Senior Software Engineer, Rackspace
 
-   ~glyph.lefkowitz@rackspace.com~
+   Invented Twisted
 
-   ~@glyph~
+   ~glyph.lefkowitz@rackspace.com~, ~@glyph~
 
 ** lvh
 
-   Principal Engineer, RMS
+   Principal Engineer
 
-   ~lvh@rackspace.com~
+   Rackspace Managed Security
 
-   ~@lvh~
+   ~lvh@rackspace.com~, ~_@lvh.io~, ~@lvh~
 
 ** Paul Kehrer
 
-   Principal Engineer, RMS
+   Principal Engineer
 
-   ~paul.kehrer@rackspace.com~
+   Rackspace Managed Security
 
-   ~@reaperhulk~
+   ~paul.kehrer@rackspace.com~, ~@reaperhulk~
 
 * High-level overview of TLS
 
