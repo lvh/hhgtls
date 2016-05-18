@@ -1,0 +1,1466 @@
+{
+  "version": 1,
+  "width": 80,
+  "height": 24,
+  "duration": 40.684559,
+  "command": "/bin/zsh",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.062836,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.267863,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000073,
+      "\u001b]2;cory@heimdall\u0007"
+    ],
+    [
+      0.000025,
+      "\u001b]1;~/tmp\u0007"
+    ],
+    [
+      0.002701,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.121649,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[34mcory\u001b[00m@\u001b[31mheimdall\u001b[00m:\u001b[36mtmp/ \u001b[00m% "
+    ],
+    [
+      0.000018,
+      "\u001b[K\u001b[57C \u001b[00m\u001b[58D"
+    ],
+    [
+      0.000301,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.495142,
+      "o"
+    ],
+    [
+      0.146128,
+      "\u0008op"
+    ],
+    [
+      0.102918,
+      "e"
+    ],
+    [
+      0.081862,
+      "n"
+    ],
+    [
+      0.087752,
+      "s"
+    ],
+    [
+      0.118219,
+      "s"
+    ],
+    [
+      0.087830,
+      "l"
+    ],
+    [
+      0.095242,
+      " "
+    ],
+    [
+      0.103885,
+      "s"
+    ],
+    [
+      0.131976,
+      "_"
+    ],
+    [
+      0.125914,
+      "c"
+    ],
+    [
+      0.084187,
+      "l"
+    ],
+    [
+      0.131161,
+      "i"
+    ],
+    [
+      0.081138,
+      "e"
+    ],
+    [
+      0.077726,
+      "n"
+    ],
+    [
+      0.075855,
+      "t"
+    ],
+    [
+      0.052094,
+      " "
+    ],
+    [
+      0.213855,
+      "-"
+    ],
+    [
+      0.229954,
+      "c"
+    ],
+    [
+      0.090468,
+      "o"
+    ],
+    [
+      0.125589,
+      "n"
+    ],
+    [
+      0.092958,
+      "n"
+    ],
+    [
+      0.064597,
+      "e"
+    ],
+    [
+      0.059721,
+      "c"
+    ],
+    [
+      0.193624,
+      "t"
+    ],
+    [
+      0.072160,
+      " "
+    ],
+    [
+      0.179872,
+      "w"
+    ],
+    [
+      0.137182,
+      "w"
+    ],
+    [
+      0.121979,
+      "w"
+    ],
+    [
+      0.096014,
+      "."
+    ],
+    [
+      0.177974,
+      "l"
+    ],
+    [
+      0.096817,
+      "v"
+    ],
+    [
+      0.104202,
+      "h"
+    ],
+    [
+      0.157878,
+      "."
+    ],
+    [
+      0.159980,
+      "i"
+    ],
+    [
+      0.129580,
+      "o"
+    ],
+    [
+      0.175472,
+      ":"
+    ],
+    [
+      0.238497,
+      "4"
+    ],
+    [
+      0.146645,
+      "4"
+    ],
+    [
+      0.325936,
+      "3"
+    ],
+    [
+      0.308953,
+      " "
+    ],
+    [
+      0.862054,
+      "-"
+    ],
+    [
+      0.232759,
+      "s"
+    ],
+    [
+      0.032134,
+      "e"
+    ],
+    [
+      0.072123,
+      "r"
+    ],
+    [
+      0.091883,
+      "v"
+    ],
+    [
+      0.043983,
+      "e"
+    ],
+    [
+      0.056016,
+      "r"
+    ],
+    [
+      0.116056,
+      "n"
+    ],
+    [
+      0.039954,
+      "a"
+    ],
+    [
+      0.099030,
+      "m"
+    ],
+    [
+      0.071886,
+      "e"
+    ],
+    [
+      0.795055,
+      " "
+    ],
+    [
+      0.224023,
+      "w"
+    ],
+    [
+      0.141451,
+      "w"
+    ],
+    [
+      0.119764,
+      "w"
+    ],
+    [
+      0.076808,
+      ".\u001b[K"
+    ],
+    [
+      0.145979,
+      "l"
+    ],
+    [
+      0.084190,
+      "v \r\u001b[K"
+    ],
+    [
+      0.102926,
+      "h"
+    ],
+    [
+      0.159737,
+      "\rh."
+    ],
+    [
+      0.156952,
+      "i"
+    ],
+    [
+      0.126269,
+      "o"
+    ],
+    [
+      1.030684,
+      " "
+    ],
+    [
+      0.780424,
+      "2"
+    ],
+    [
+      0.184946,
+      "\u003e"
+    ],
+    [
+      0.300080,
+      "\u0026"
+    ],
+    [
+      0.219747,
+      "1"
+    ],
+    [
+      0.354925,
+      " "
+    ],
+    [
+      0.268962,
+      " "
+    ],
+    [
+      0.333885,
+      "\u0008"
+    ],
+    [
+      0.209410,
+      "|"
+    ],
+    [
+      0.175710,
+      " "
+    ],
+    [
+      0.196013,
+      "l"
+    ],
+    [
+      0.098013,
+      "e"
+    ],
+    [
+      0.064159,
+      "s"
+    ],
+    [
+      0.145166,
+      "s"
+    ],
+    [
+      0.217385,
+      "\u001b[?1l\u001b\u003e"
+    ],
+    [
+      0.000157,
+      "\r\r\n"
+    ],
+    [
+      0.003866,
+      "\u001b]2;openssl s_client -connect www.lvh.io:443 -servername www.lvh.io 2\u003e\u00261 | less\u0007"
+    ],
+    [
+      0.000011,
+      "\u001b]1;openssl\u0007"
+    ],
+    [
+      0.008104,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.058173,
+      "depth=3 C = SE, O = AddTrust AB, OU = AddTrust External TTP Network, CN = AddTru\u001b[m \u0008"
+    ],
+    [
+      0.000034,
+      "st External CA Root\u001b[m\r\nverify return:1\u001b[m\r\n"
+    ],
+    [
+      0.000615,
+      "depth=2 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN \u001b[m \u0008"
+    ],
+    [
+      0.000007,
+      "= COMODO ECC Certification Authority\u001b[m\r\nverify return:1\u001b[m\r\n"
+    ],
+    [
+      0.001418,
+      "depth=1 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN \u001b[m \u0008"
+    ],
+    [
+      0.000006,
+      "= COMODO ECC Domain Validation Secure Server CA 2\u001b[m\r\n"
+    ],
+    [
+      0.000014,
+      "verify return:1\u001b[m\r\n"
+    ],
+    [
+      0.001263,
+      "depth=0 OU = Domain Control Validated, OU = PositiveSSL Multi-Domain, CN = sni10\u001b[m \u0008"
+    ],
+    [
+      0.000006,
+      "3656.cloudflaressl.com\u001b[m\r\nverify return:1\u001b[m\r\n"
+    ],
+    [
+      0.060306,
+      "CONNECTED(00000003)\u001b[m\r\n---\u001b[m\r\nCertificate chain\u001b[m\r\n 0 s:/OU=Domain Control Validated/OU=PositiveSSL Multi-Domain/CN=sni103656.cloud\u001b[m \u0008flaressl.com\u001b[m\r\n   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Dom\u001b[m \u0008ain Validation Secure Server CA 2\u001b[m\r\n 1 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Dom\u001b[m \u0008ain Validation Secure Server CA 2\u001b[m\r\n   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Cer\u001b[m \u0008tification Authority\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      2.201335,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.205945,
+      "\u001b[KESC\u0008\u0008\u0008ESC\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      0.341832,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.136985,
+      "\u001b[KESC\u0008\u0008\u0008ESC\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      0.153904,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.713927,
+      "\u001b[KESC\u0008\u0008\u0008ESC\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      0.538085,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.436040,
+      "\u001b[KESC\u0008\u0008\u0008ESC\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      4.636360,
+      "\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      0.972235,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000042,
+      " 2 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Cer\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.434791,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000042,
+      "tification Authority\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139298,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O"
+    ],
+    [
+      0.000005,
+      "\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000039,
+      "   i:/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External C\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.123554,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000008,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "A Root\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.121376,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.123328,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000015,
+      "Server certificate\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139054,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000006,
+      "\u001b[KO\u0008O"
+    ],
+    [
+      0.000029,
+      "\u001b[KB\u0008B\r\u001b[K-----BEGIN CERTIFICATE-----\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.124943,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "MIIE7DCCBJKgAwIBAgIQUFujdIhMff5jccLm3YgU7DAKBggqhkjOPQQDAjCBkjEL\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147504,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000051,
+      "MAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UE\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.131802,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000032,
+      "BxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxODA2BgNVBAMT\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.135181,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KL0NPTU9ETyBFQ0MgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQSAy\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.135999,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000040,
+      "MB4XDTE2MDUwODAwMDAwMFoXDTE2MTExMzIzNTk1OVowbDEhMB8GA1UECxMYRG9t\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.133784,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "YWluIENvbnRyb2wgVmFsaWRhdGVkMSEwHwYDVQQLExhQb3NpdGl2ZVNTTCBNdWx0\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.123925,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000008,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000031,
+      "aS1Eb21haW4xJDAiBgNVBAMTG3NuaTEwMzY1Ni5jbG91ZGZsYXJlc3NsLmNvbTBZ\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.130126,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000048,
+      "MBMGByqGSM49AgEGCCqGSM49AwEHA0IABCCPnUl/VILkJuahVlf5UmuJdKdpnd2f\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.130921,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000051,
+      "cBlrLH+TECqr53KrnoFl+rY3C7PWcJn/mr/nkmQnZz9xuTqNzpa/a36jggLtMIIC\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.131148,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000046,
+      "6TAfBgNVHSMEGDAWgBRACWFn8LyDcU/eEggsb9TUK3Y9ljAdBgNVHQ4EFgQUKCrB\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.544562,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000008,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000042,
+      "3CENpVAxsmqd7a/xjQLihhcwDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAw\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.152100,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000041,
+      "HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCME8GA1UdIARIMEYwOgYLKwYB\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.150883,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000017,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000009,
+      "BAGyMQECAgcwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLmNv\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.131135,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000031,
+      "bS9DUFMwCAYGZ4EMAQIBMFYGA1UdHwRPME0wS6BJoEeGRWh0dHA6Ly9jcmwuY29t\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.133871,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000040,
+      "b2RvY2E0LmNvbS9DT01PRE9FQ0NEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVy\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137819,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000037,
+      "Q0EyLmNybDCBiAYIKwYBBQUHAQEEfDB6MFEGCCsGAQUFBzAChkVodHRwOi8vY3J0\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.134161,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000048,
+      "LmNvbW9kb2NhNC5jb20vQ09NT0RPRUNDRG9tYWluVmFsaWRhdGlvblNlY3VyZVNl\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138904,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000042,
+      "cnZlckNBMi5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLmNvbW9kb2NhNC5j\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140836,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000038,
+      "b20wggE0BgNVHREEggErMIIBJ4Ibc25pMTAzNjU2LmNsb3VkZmxhcmVzc2wuY29t\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.135286,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000039,
+      "ghgqLmFzaWF0ZXNvdWxhZ2VkaXJlY3QuZXWCFCouY2FzYW1lc3RpY2EuY29tLmJy\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.136500,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000031,
+      "gg4qLmNyeXB0bzEwMS5pb4IIKi5sdmguY2OCCCoubHZoLmlvghYqLm1vcmludmls\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.131297,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "bGVmbG93ZXJzLmNhghIqLndwZnJlc2hzdGFydC5jb22CCyouenozODAuY29tghZh\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142762,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "c2lhdGVzb3VsYWdlZGlyZWN0LmV1ghJjYXNhbWVzdGljYS5jb20uYnKCDGNyeXB0\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137026,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000017,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000021,
+      "bzEwMS5pb4IGbHZoLmNjggZsdmguaW+CFG1vcmludmlsbGVmbG93ZXJzLmNhghB3\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.130972,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000008,
+      "cGZyZXNoc3RhcnQuY29tggl6ejM4MC5jb20wCgYIKoZIzj0EAwIDSAAwRQIhAJ9l\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.131799,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000038,
+      "klfyqfy9cc/J3wTJfPuHiNdWEuIppPT1BZD3aqtHAiA1fstcDgS4gMfxuK1AncJd\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140903,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "InozkBbOJhjxIDEtlEJG5w==\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138176,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000036,
+      "-----END CERTIFICATE-----\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140923,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000052,
+      "subject=/OU=Domain Control Validated/OU=PositiveSSL Multi-Domain/CN=sni103656.cl\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.135013,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000047,
+      "oudflaressl.com\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142973,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000039,
+      "issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC D\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.142153,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000035,
+      "omain Validation Secure Server CA 2\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142651,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.141160,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000015,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "No client certificate CA names sent\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147614,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000004,
+      "Peer signing digest: SHA512\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148173,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "Server Temp Key: ECDH, P-256, 256 bits\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.135975,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.151114,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000015,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000021,
+      "SSL handshake has read 3686 bytes and written 453 bytes\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147768,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.141011,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "New, TLSv1/SSLv3, Cipher is ECDHE-ECDSA-AES128-GCM-SHA256\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.144351,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000019,
+      "Server public key is 256 bit\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.141671,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000011,
+      "Secure Renegotiation IS supported\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147295,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000027,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KCompression: NONE\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148521,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KExpansion: NONE\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142521,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KNo ALPN negotiated\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138635,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KSSL-Session:\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.150900,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Protocol  : TLSv1.2\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.144522,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000006,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000013,
+      "    Cipher    : ECDHE-ECDSA-AES128-GCM-SHA256\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.149392,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000063,
+      "    Session-ID: F40B13A8959C4053EA7486432061AFEA29DE70F104E82B35D02FA9897BABC662\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142732,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000006,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "    Session-ID-ctx: \u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.150387,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000049,
+      "    Master-Key: CE0D890D7C399E9A3B70C212793CD666C6CDF65A71E88BA25BEFEAE93B528401\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.150478,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000043,
+      "81B7DCC4A3C6C4168DB5D109722A1FA4\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148475,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Key-Arg   : None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147651,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000008,
+      "    PSK identity: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.152517,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000024,
+      "    PSK identity hint: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148486,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "    SRP username: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.146931,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000015,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000033,
+      "    TLS session ticket lifetime hint: 64800 (seconds)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.155980,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "    TLS session ticket:\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148454,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000066,
+      "    0000 - e2 d7 65 13 be 8b c7 c4-f0 e1 ed 18 2e a8 eb 6f   ..e............o\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.155427,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000046,
+      "    0010 - 93 29 e2 de ef 69 8f 0d-b4 09 2e 65 a4 98 c2 67   .)...i.....e...g\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.171983,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000035,
+      "    0020 - 88 de 1a a0 e9 7d 23 4d-f4 cc 87 34 4f 41 24 c9   .....}#M...4OA$.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.156319,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000036,
+      "    0030 - 70 24 c4 07 88 6e ea 27-bc f6 cc 76 eb 39 72 f6   p$...n.'...v.9r.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.141656,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "    0040 - 54 0b 84 78 9c 38 fa fe-89 3b 89 5f 06 ea b0 4d   T..x.8...;._...M\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.152878,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000045,
+      "    0050 - 26 5a e3 d8 6e c5 b1 5b-e3 67 85 26 2b ea c7 93   \u0026Z..n..[.g.\u0026+...\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.501140,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC\u001b[KO\u0008O"
+    ],
+    [
+      0.000014,
+      "\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000037,
+      "    0060 - 07 6d ba 75 7c 1d 27 2c-c4 10 5c 23 cd 08 f3 bf   .m.u|.',..\\#....\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084556,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000055,
+      "    0070 - 3f 5d 3e 87 37 44 39 1b-98 88 9e 54 6a dc ad 9a   ?]\u003e.7D9....Tj...\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.083845,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000032,
+      "    0080 - e1 3d fe 01 e4 3c e5 e7-42 ab eb 00 71 6a c2 23   .=...\u003c..B...qj.#\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084231,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000022,
+      "    0090 - 32 46 8c ac 2f 3f a4 29-98 d1 6a 01 ac 66 1d bb   2F../?.)..j..f..\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084020,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000058,
+      "    00a0 - e2 5e e3 35 b3 8c de be-f8 9d a6 00 76 c8 46 bf   .^.5........v.F.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084818,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000049,
+      "    00b0 - 02 17 82 b5 21 30 cc cc-61 42 c7 61 6e 8c 3e 36   ....!0..aB.an.\u003e6\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.083969,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000019,
+      "\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.083754,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Start Time: 1463483586\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084504,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000024,
+      "    Timeout   : 300 (sec)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084504,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000022,
+      "    Verify return code: 0 (ok)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.083648,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000009,
+      "---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.084323,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.084620,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.084429,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.084765,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O"
+    ],
+    [
+      0.000033,
+      "\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000012,
+      "\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.082431,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      1.851798,
+      "\r\u001b[K\u001b[?1l\u001b\u003e\u001b[?1049l"
+    ],
+    [
+      0.000610,
+      "\r\n"
+    ],
+    [
+      0.000479,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000268,
+      "\u001b]2;cory@heimdall\u0007"
+    ],
+    [
+      0.000171,
+      "\u001b]1;~/tmp\u0007"
+    ],
+    [
+      0.003092,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.079347,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[34mcory\u001b[00m@\u001b[31mheimdall\u001b[00m:\u001b[36mtmp/ \u001b[00m% \u001b[K\u001b[57C \u001b[00m\u001b[58D"
+    ],
+    [
+      0.000057,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      1.215512,
+      "\r\r\n"
+    ]
+  ]
+}
