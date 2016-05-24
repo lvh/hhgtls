@@ -1,0 +1,1210 @@
+{
+  "version": 1,
+  "width": 80,
+  "height": 24,
+  "duration": 34.136288,
+  "command": "/bin/zsh",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.059452,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.286461,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000028,
+      "\u001b]2;cory@heimdall\u0007"
+    ],
+    [
+      0.000014,
+      "\u001b]1;~/tmp\u0007"
+    ],
+    [
+      0.002878,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.126416,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[34mcory\u001b[00m@\u001b[31mheimdall\u001b[00m:\u001b[36mtmp/ \u001b[00m% "
+    ],
+    [
+      0.000054,
+      "\u001b[K\u001b[57C \u001b[00m\u001b[58D"
+    ],
+    [
+      0.000106,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.581084,
+      "o"
+    ],
+    [
+      0.133238,
+      "\u0008op"
+    ],
+    [
+      0.060047,
+      "e"
+    ],
+    [
+      0.099372,
+      "n"
+    ],
+    [
+      0.068641,
+      "s"
+    ],
+    [
+      0.120031,
+      "s"
+    ],
+    [
+      0.150931,
+      "l"
+    ],
+    [
+      0.147733,
+      " "
+    ],
+    [
+      0.175277,
+      "s"
+    ],
+    [
+      0.138041,
+      "_"
+    ],
+    [
+      0.118039,
+      "c"
+    ],
+    [
+      0.088970,
+      "l"
+    ],
+    [
+      0.134011,
+      "i"
+    ],
+    [
+      0.099420,
+      "e"
+    ],
+    [
+      0.072378,
+      "n"
+    ],
+    [
+      0.093157,
+      "t"
+    ],
+    [
+      0.072915,
+      " "
+    ],
+    [
+      0.132698,
+      "-"
+    ],
+    [
+      0.123387,
+      "c"
+    ],
+    [
+      0.091929,
+      "o"
+    ],
+    [
+      0.126964,
+      "n"
+    ],
+    [
+      0.094876,
+      "n"
+    ],
+    [
+      0.324225,
+      "e"
+    ],
+    [
+      0.063790,
+      "c"
+    ],
+    [
+      0.191192,
+      "t"
+    ],
+    [
+      0.113921,
+      " "
+    ],
+    [
+      0.084153,
+      "h"
+    ],
+    [
+      0.059901,
+      "t"
+    ],
+    [
+      0.093835,
+      "t"
+    ],
+    [
+      0.097273,
+      "p"
+    ],
+    [
+      0.114020,
+      "2"
+    ],
+    [
+      0.162938,
+      "b"
+    ],
+    [
+      0.075942,
+      "i"
+    ],
+    [
+      0.067868,
+      "n"
+    ],
+    [
+      0.160122,
+      "."
+    ],
+    [
+      0.142729,
+      "o"
+    ],
+    [
+      0.072201,
+      "r"
+    ],
+    [
+      0.141916,
+      "g"
+    ],
+    [
+      0.329014,
+      ":"
+    ],
+    [
+      0.267982,
+      "4"
+    ],
+    [
+      0.123012,
+      "4"
+    ],
+    [
+      0.072180,
+      "3"
+    ],
+    [
+      0.362822,
+      " "
+    ],
+    [
+      0.218062,
+      "-"
+    ],
+    [
+      0.169007,
+      "a"
+    ],
+    [
+      0.103986,
+      "l"
+    ],
+    [
+      0.140109,
+      "p"
+    ],
+    [
+      0.166406,
+      "n"
+    ],
+    [
+      0.165456,
+      " "
+    ],
+    [
+      0.201869,
+      "\""
+    ],
+    [
+      0.244170,
+      "h"
+    ],
+    [
+      0.064112,
+      "2"
+    ],
+    [
+      0.234747,
+      ","
+    ],
+    [
+      0.229117,
+      "h"
+    ],
+    [
+      0.079923,
+      "t"
+    ],
+    [
+      0.104106,
+      "t"
+    ],
+    [
+      0.068077,
+      "p\u001b[K"
+    ],
+    [
+      0.213855,
+      "/"
+    ],
+    [
+      0.089030,
+      "1 \r\u001b[K"
+    ],
+    [
+      0.079997,
+      "."
+    ],
+    [
+      0.079925,
+      "\r.1"
+    ],
+    [
+      0.333283,
+      "\""
+    ],
+    [
+      0.859757,
+      " "
+    ],
+    [
+      0.386052,
+      "2"
+    ],
+    [
+      0.385248,
+      "\u003e"
+    ],
+    [
+      0.673943,
+      "\u0026"
+    ],
+    [
+      0.187716,
+      "1"
+    ],
+    [
+      0.194736,
+      " "
+    ],
+    [
+      0.183089,
+      "\""
+    ],
+    [
+      0.145478,
+      " "
+    ],
+    [
+      0.352911,
+      "\u0008"
+    ],
+    [
+      0.259716,
+      "\""
+    ],
+    [
+      0.363818,
+      "\u0008 \u0008"
+    ],
+    [
+      0.106072,
+      "\u0008 \u0008"
+    ],
+    [
+      0.205963,
+      "\""
+    ],
+    [
+      0.337963,
+      "\u0008 \u0008"
+    ],
+    [
+      0.161000,
+      "|"
+    ],
+    [
+      0.198138,
+      " "
+    ],
+    [
+      0.136943,
+      "l"
+    ],
+    [
+      0.075928,
+      "e"
+    ],
+    [
+      0.056291,
+      "s"
+    ],
+    [
+      0.117735,
+      "s"
+    ],
+    [
+      0.137990,
+      "\u001b[?1l\u001b\u003e"
+    ],
+    [
+      0.000082,
+      "\r\r\n"
+    ],
+    [
+      0.002204,
+      "\u001b]2;openssl s_client -connect http2bin.org:443 -alpn \"h2,http/1.1\" 2\u003e\u00261 | less\u0007\u001b]1;openssl\u0007"
+    ],
+    [
+      0.009218,
+      "\u001b[?1049h\u001b[?1h\u001b=\r"
+    ],
+    [
+      0.189959,
+      "depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3\u001b[m\r\nverify return:1\u001b[m\r\n"
+    ],
+    [
+      0.000348,
+      "depth=1 C = US, O = Let's Encrypt, CN = Let's Encrypt Authority X3\u001b[m\r\n"
+    ],
+    [
+      0.000009,
+      "verify return:1\u001b[m\r\n"
+    ],
+    [
+      0.000210,
+      "depth=0 CN = http2bin.org\u001b[m\r\nverify return:1\u001b[m\r\n"
+    ],
+    [
+      0.081062,
+      "CONNECTED(00000003)\u001b[m\r\n---\u001b[m\r\nCertificate chain\u001b[m\r\n 0 s:/CN=http2bin.org\u001b[m\r\n   i:/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3\u001b[m\r\n 1 s:/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3\u001b[m\r\n   i:/O=Digital Signature Trust Co./CN=DST Root CA X3\u001b[m\r\n---\u001b[m\r\nServer certificate\u001b[m\r\n-----BEGIN CERTIFICATE-----\u001b[m\r\nMIIFDjCCA/agAwIBAgISA9YY1WU6/oPFz8F6fj7rpV3PMA0GCSqGSIb3DQEBCwUA\u001b[m\r\nMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD\u001b[m\r\nExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xNjA0MjgwNjI0MDBaFw0x\u001b[m\r\nNjA3MjcwNjI0MDBaMBcxFTATBgNVBAMTDGh0dHAyYmluLm9yZzCCASIwDQYJKoZI\u001b[m\r\nhvcNAQEBBQADggEPADCCAQoCggEBAPh6VEoxqvJWlB/Kcw+LvGjLFr67tLLWp0E6\u001b[m\r\ndnq+LDPcPvuTvE0DE95/lO/SY9obo+kV8MPvX6cHg627MV1yDobiqOVHifOc6Rn/\u001b[m\r\numbYEFomABl05G+sMxfDvmvbqZVyxPMQIIOBMqzMz56LOYTs8sHblc7UAlB/Rftr\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      1.793093,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.155093,
+      "\u001b[KESC\u0008\u0008\u0008ESC\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      1.085038,
+      "\u0007\r\u001b[K:\u001b[K"
+    ],
+    [
+      0.543585,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000037,
+      "KdQF1a1do8f2Ude4y+max/CbWM1R9RT1LmsvCf1c3Z0KJj8fPtLlOPHncDy1V1kB\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.294498,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000032,
+      "4MceIXmlGYFgDDZIKYjS1Sud+dnMyHDZUeFqMKOSpFQHeopwWkj+prBxYFFpk35K\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148828,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000006,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "PGusmch+RFq+1UdEmkyVy25p7qAku7mc4OCGq6n7/osb9f8EEF0CAwEAAaOCAh8w\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.144531,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000053,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KggIbMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137993,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "AwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUGojTw3UPowEDy18caupp8K1NiVIw\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.128097,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000021,
+      "HwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwcAYIKwYBBQUHAQEEZDBi\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.136230,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000013,
+      "MC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3Jn\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.132991,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000026,
+      "LzAvBggrBgEFBQcwAoYjaHR0cDovL2NlcnQuaW50LXgzLmxldHNlbmNyeXB0Lm9y\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.132849,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000008,
+      "Zy8wKQYDVR0RBCIwIIIMaHR0cDJiaW4ub3JnghB3d3cuaHR0cDJiaW4ub3JnMIH+\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.133613,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000033,
+      "BgNVHSAEgfYwgfMwCAYGZ4EMAQIBMIHmBgsrBgEEAYLfEwEBATCB1jAmBggrBgEF\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.130975,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "BQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwgasGCCsGAQUFBwICMIGe\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137103,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000032,
+      "DIGbVGhpcyBDZXJ0aWZpY2F0ZSBtYXkgb25seSBiZSByZWxpZWQgdXBvbiBieSBS\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.132106,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000030,
+      "ZWx5aW5nIFBhcnRpZXMgYW5kIG9ubHkgaW4gYWNjb3JkYW5jZSB3aXRoIHRoZSBD\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137051,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000025,
+      "ZXJ0aWZpY2F0ZSBQb2xpY3kgZm91bmQgYXQgaHR0cHM6Ly9sZXRzZW5jcnlwdC5v\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137560,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KcmcvcmVwb3NpdG9yeS8wDQYJKoZIhvcNAQELBQADggEBAHkz8UAjtyhGLJoz3k0u\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.144052,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000031,
+      "1MGUZYzNGCcSD7dguX2bepeOEqzK9nDUYiY/JkWowwUF063YMV1vGwLFVIsEELmw\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.133966,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K8SWsLCbN7c0OoC1JwTfjbp6SgYQZXRMJmktWvof1smyhiDXcJs0Fq/NRGtUiPGX7\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139337,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000049,
+      "Ksq6b5o/jB9Pev9QZQMRt6I37V66PUUE0eMcbca8qchgy/3+/M54Cc8llPCpkfLH\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.134901,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000038,
+      "ZoV6UMlQhDpH/A7wvzP+vQbBewnXyqE1nG+/RsGdikaZwVggEzU8DwmBxCV1SMOj\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138693,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000021,
+      "4FCQwtiu3yEvxxlLSlk1c8pRTQal0N3Jmq0MExF7Wa8xBs7WPtqVuumt755vkTiw\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138733,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[Kizk=\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.271388,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "-----END CERTIFICATE-----\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.138749,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O"
+    ],
+    [
+      0.000005,
+      "\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000028,
+      "subject=/CN=http2bin.org\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.149933,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000026,
+      "issuer=/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139968,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.145953,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000030,
+      "No client certificate CA names sent\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.134935,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000007,
+      "Peer signing digest: SHA512\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148980,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000023,
+      "Server Temp Key: ECDH, P-256, 256 bits\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.145977,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140976,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000043,
+      "SSL handshake has read 3143 bytes and written 452 bytes\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.152930,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000013,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000019,
+      "---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140853,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-GCM-SHA384\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.155194,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000034,
+      "Server public key is 2048 bit\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.147096,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KSecure Renegotiation IS supported\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.153803,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000027,
+      "Compression: NONE\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.146976,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000012,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "Expansion: NONE\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142389,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000028,
+      "ALPN protocol: h2\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.398525,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[KSSL-Session:\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      1.934925,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000024,
+      "    Protocol  : TLSv1.2\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.155448,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000031,
+      "    Cipher    : ECDHE-RSA-AES256-GCM-SHA384\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.154349,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000046,
+      "    Session-ID: CD4BDDBE8C248BB9F59C946AB3F138DD8546E0B74CE550417C85145C53F01924\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137789,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "    Session-ID-ctx: \u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.146273,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000032,
+      "    Master-Key: DD40FE7911C84177878FD0FB1D7BED5DCC17EDE4D54B9FFD337C62AA546F43FD\u001b[m \u0008:\u001b[K"
+    ],
+    [
+      0.150042,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000044,
+      "0C197FB1B62CFB8FE78385BEB123333C\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.149855,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000015,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Key-Arg   : None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.640026,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000022,
+      "    PSK identity: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.137052,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "    PSK identity hint: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.154349,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000004,
+      "    SRP username: None\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148451,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000019,
+      "    TLS session ticket lifetime hint: 3600 (seconds)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.142827,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000014,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000028,
+      "    TLS session ticket:\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.150084,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000055,
+      "    0000 - f2 ef a4 f1 61 73 0d fb-a7 a0 3c 5a af 1a 99 f7   ....as....\u003cZ....\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139013,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000041,
+      "    0010 - 83 6c f3 df ad 85 47 44-02 4b 2d 8d 7e 39 db ae   .l....GD.K-.~9..\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.161441,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000040,
+      "    0020 - 77 0b 33 fe c4 16 9b 18-64 ed ff 20 62 90 62 d8   w.3.....d.. b.b.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139876,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000040,
+      "    0030 - 22 83 3c 2c cd e0 93 d5-58 c3 ab 58 18 1d 59 14   \".\u003c,....X..X..Y.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.144800,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000008,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000033,
+      "    0040 - 74 fe 80 97 be 26 1c c5-a4 44 f1 21 4d f0 b3 6c   t....\u0026...D.!M..l\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.146997,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000036,
+      "    0050 - a8 24 c4 1d 08 d6 1d 11-78 70 4c b0 82 c4 25 0f   .$......xpL...%.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.146037,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000007,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000039,
+      "    0060 - 06 0e e6 b6 b2 0e 46 bd-94 62 79 ae e6 a3 57 ad   ......F..by...W.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.145710,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    0070 - 33 63 bc 1a 5f 85 fa 01-27 54 fa f5 f3 86 f4 f2   3c.._...'T......\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.148281,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000017,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000034,
+      "    0080 - 8f 33 2c f3 5e 97 67 19-ee cb 00 4c 9d 29 90 c8   .3,.^.g....L.)..\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.135436,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000052,
+      "    0090 - c1 86 cc b7 0e 6b d5 88-c2 5f 00 f8 cf 06 3a dc   .....k..._....:.\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.140047,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000011,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000006,
+      "\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.134872,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000005,
+      "    Start Time: 1463484379\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139866,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Timeout   : 300 (sec)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.139992,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000016,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K    Verify return code: 0 (ok)\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.150070,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000009,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K---\u001b[m\r\n:\u001b[K"
+    ],
+    [
+      0.145337,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K"
+    ],
+    [
+      0.000041,
+      "\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.141732,
+      "\r\u001b[K \u001b[KESC\u0008\u0008\u0008ESC"
+    ],
+    [
+      0.000010,
+      "\u001b[KO\u0008O\u001b[KB\u0008B\r\u001b[K\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      1.431273,
+      "\u0007\r\u001b[K\u001b[7m(END)\u001b[27m\u001b[K"
+    ],
+    [
+      0.624558,
+      "\r\u001b[K\u001b[?1l\u001b\u003e\u001b[?1049l"
+    ],
+    [
+      0.000489,
+      "\r\n"
+    ],
+    [
+      0.000313,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000239,
+      "\u001b]2;cory@heimdall\u0007"
+    ],
+    [
+      0.000077,
+      "\u001b]1;~/tmp\u0007"
+    ],
+    [
+      0.003211,
+      "\u001b]7;file://heimdall/Users/cory/tmp\u0007"
+    ],
+    [
+      0.083299,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[34mcory\u001b[00m@\u001b[31mheimdall\u001b[00m:\u001b[36mtmp/ \u001b[00m% "
+    ],
+    [
+      0.000043,
+      "\u001b[K\u001b[57C \u001b[00m\u001b[58D"
+    ],
+    [
+      0.000065,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.811548,
+      "\r\r\n"
+    ]
+  ]
+}
