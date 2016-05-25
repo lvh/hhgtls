@@ -15,7 +15,7 @@
 
   ~https://www.lvh.io/hhgtls~
 
-* Introduction
+* Hello!
 
 * Servers
 
@@ -27,7 +27,23 @@
 
 ** SSLLabs
 
+   [[https://www.ssllabs.com/ssltest/analyze.html?d=www.lvh.io&latest][Test lvh.io]]
+
 ** sslyze
+
+   ~docker pull lvhio/sslyze~
+
+   ~<rant>~
+
+** sslyze
+
+ #+BEGIN_HTML
+  <div id="asciinema-sslyze-lvh"></div>
+  <script>
+  asciinema.player.js.CreatePlayer('asciinema-sslyze-lvh', 'asciicast/sslyze-lvh.json', {fontSize: 16});
+  </script>
+ #+END_HTML
+
 
 * Using OpenSSL
 

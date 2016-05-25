@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "width": 80,
+  "height": 25,
+  "duration": 16.789213,
+  "command": "zsh",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/fish"
+  },
+  "stdout": [
+    [
+      0.009110,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.003074,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jzygalski% \u001b[K"
+    ],
+    [
+      1.729616,
+      "d"
+    ],
+    [
+      0.087784,
+      "\u0008do"
+    ],
+    [
+      0.087692,
+      "c"
+    ],
+    [
+      0.071943,
+      "k"
+    ],
+    [
+      0.119859,
+      "e"
+    ],
+    [
+      0.080326,
+      "r"
+    ],
+    [
+      0.000301,
+      " "
+    ],
+    [
+      0.151315,
+      "r"
+    ],
+    [
+      0.056940,
+      "u"
+    ],
+    [
+      0.159397,
+      "n"
+    ],
+    [
+      0.040641,
+      " "
+    ],
+    [
+      0.166859,
+      "l"
+    ],
+    [
+      0.080242,
+      "v"
+    ],
+    [
+      0.192639,
+      "h"
+    ],
+    [
+      0.055073,
+      "i"
+    ],
+    [
+      0.159997,
+      "o"
+    ],
+    [
+      0.215871,
+      "/"
+    ],
+    [
+      0.144118,
+      "s"
+    ],
+    [
+      0.152027,
+      "s"
+    ],
+    [
+      0.088061,
+      "l"
+    ],
+    [
+      0.159835,
+      "y"
+    ],
+    [
+      0.208372,
+      "z"
+    ],
+    [
+      0.191691,
+      "e"
+    ],
+    [
+      0.903940,
+      " "
+    ],
+    [
+      0.280939,
+      "w"
+    ],
+    [
+      0.167068,
+      "w"
+    ],
+    [
+      0.151970,
+      "w"
+    ],
+    [
+      0.096103,
+      "."
+    ],
+    [
+      0.159815,
+      "l"
+    ],
+    [
+      0.064975,
+      "v"
+    ],
+    [
+      0.183326,
+      "h"
+    ],
+    [
+      0.056064,
+      "."
+    ],
+    [
+      0.192024,
+      "i"
+    ],
+    [
+      0.135503,
+      "o"
+    ],
+    [
+      0.880051,
+      " "
+    ],
+    [
+      0.145229,
+      "-"
+    ],
+    [
+      0.119128,
+      "-"
+    ],
+    [
+      0.063697,
+      "r"
+    ],
+    [
+      0.056315,
+      "e"
+    ],
+    [
+      0.143626,
+      "g"
+    ],
+    [
+      0.144438,
+      "u"
+    ],
+    [
+      0.215491,
+      "l"
+    ],
+    [
+      0.088429,
+      "a"
+    ],
+    [
+      0.064035,
+      "r"
+    ],
+    [
+      0.136118,
+      "\r\r\n"
+    ],
+    [
+      0.518598,
+      "\r\n\r\n\r\n AVAILABLE PLUGINS\r\n -----------------\r\n\r\n  HeartbleedPlugin\r\n  OpenSslCcsInjectionPlugin\r\n  CertificateInfoPlugin\r\n  HstsPlugin\r\n  SessionResumptionPlugin\r\n  CompressionPlugin\r\n  SessionRenegotiationPlugin\r\n  OpenSslCipherSuitesPlugin\r\n  FallbackScsvPlugin\r\n\r\n\r\n\r\n CHECKING HOST(S) AVAILABILITY\r\n -----------------------------\r\n\r\n   www.lvh.io:443                       =\u003e 104.18.35.57 \r\n"
+    ],
+    [
+      4.057411,
+      "\r\n"
+    ],
+    [
+      0.145639,
+      "\r\n\r\n\r\n SCAN RESULTS FOR WWW.LVH.IO:443 - 104.18.35.57:443\r\n --------------------------------------------------\r\n\r\n  * TLSV1_1 Cipher Suites:\r\n      Preferred:                       \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA              ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n      Accepted:                        \r\n        TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA              ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA              ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA             ECDH-256 bits  112 bits      HTTP 200 OK                                                 \r\n\r\n  * TLSV1 Cipher Suites:\r\n      Preferred:                       \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA              ECDH-256 bits  128 bits      HTTP 200 OK                                     "
+    ],
+    [
+      0.000042,
+      "            \r\n      Accepted:                        \r\n        TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA              ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA              ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA             ECDH-256 bits  112 bits      HTTP 200 OK                                                 \r\n\r\n  * TLSV1_2 Cipher Suites:\r\n      Preferred:                       \r\n        TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256     ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n      Accepted:                        \r\n        TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA              ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256     ECDH-256 bits  256 bits      HTTP 200 OK              "
+    ],
+    [
+      0.000075,
+      "                                   \r\n        TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384           ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384           ECDH-256 bits  256 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256           ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256           ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA              ECDH-256 bits  128 bits      HTTP 200 OK                                                 \r\n        TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA             ECDH-256 bits  112 bits      HTTP 200 OK                                                 \r\n\r\n  * Deflate Compression:\r\n                                         OK - Compression disable"
+    ],
+    [
+      0.000045,
+      "d\r\n\r\n  * OpenSSL Heartbleed:\r\n                                         OK - Not vulnerable to Heartbleed\r\n\r\n  * Session Renegotiation:\r\n      Client-initiated Renegotiation:    OK - Rejected\r\n      Secure Renegotiation:              OK - Supported\r\n\r\n  * OpenSSL CCS Injection:\r\n                                         OK - Not vulnerable to OpenSSL CCS injection\r\n\r\n  * Certificate Basic Information:\r\n      SHA1 Fingerprint:                  d6852d1f56ef14f6beaaab88dce7d8c1b6b47743\r\n      Common Name:                       sni103656.cloudflaressl.com\r\n      Issuer:                            COMODO ECC Domain Validation Secure Server CA 2\r\n      Serial Number:                     505BA374884C7DFE6371C2E6DD8814EC\r\n      Not Before:                        May  8 00:00:00 2016 GMT\r\n      Not After:                         Nov 13 23:59:59 2016 GMT\r\n      Signature Algorithm:               ecdsa-with-SHA256\r\n      Public Key Algorithm:              id-ecPublicKey\r\n      Key Size:                          256 bit\r\n "
+    ],
+    [
+      0.000023,
+      "     X509v3 Subject Alternative Name:   {'DNS': ['sni10365"
+    ],
+    [
+      0.008124,
+      "6.cloudflaressl.com', '*.asiatesoulagedirect.eu', '*.casamestica.com.br', '*.crypto101.io', '*.lvh.cc', '*.lvh.io', '*.morinvilleflowers.ca', '*.wpfreshstart.com', '*.zz380.com', 'asiatesoulagedirect.eu', 'casamestica.com.br', 'crypto101.io', 'lvh.cc', 'lvh.io', 'morinvilleflowers.ca', 'wpfreshstart.com', 'zz380.com']}\r\n\r\n  * Certificate - Trust:\r\n      Hostname Validation:               OK - Subject Alternative Name matches www.lvh.io\r\n      Mozilla NSS CA Store (02/2016):    OK - Certificate is trusted\r\n      Microsoft CA Store (02/2016):      OK - Certificate is trusted\r\n      Apple CA Store (OS X 10.11.3):     OK - Certificate is trusted\r\n      Java 6 CA Store (Update 65):       OK - Certificate is trusted\r\n      AOSP CA Store (N Preview 2):       OK - Certificate is trusted\r\n      Weak Signature:                    OK - No SHA1-signed certificate in the chain\r\n      Certificate Chain Received:        sni103656.cloudflaressl.com --\u003e COMODO ECC Domain Validation Secure Server CA 2 --\u003e COMODO ECC Certificat"
+    ],
+    [
+      0.000044,
+      "ion Authority\r\n      Certificate Chain Order:           OK - Order is valid\r\n\r\n  * Certificate - OCSP Stapling:\r\n      OCSP Response Status:              successful\r\n      Validation w/ Mozilla's CA Store:  OK - Response is trusted\r\n      Responder Id:                      40096167F0BC83714FDE12082C6FD4D42B763D96\r\n      Cert Status:                       good\r\n      Cert Serial Number:                505BA374884C7DFE6371C2E6DD8814EC\r\n      This Update:                       May 25 14:42:57 2016 GMT\r\n      Next Update:                       May 29 14:42:57 2016 GMT\r\n\r\n  * Session Resumption:\r\n      With Session IDs:                  OK - Supported (5 successful, 0 failed, 0 errors, 5 total attempts).\r\n      With TLS Tickets:                  OK - Supported\r\n\r\n  * SSLV3 Cipher Suites:\r\n      Server rejected all cipher suites.\r\n\r\n  * Downgrade Attacks:\r\n      TLS_FALLBACK_SCSV:                 OK - Supported\r\n\r\n  * SSLV2 Cipher Suites:\r\n      Server rejected all cipher suites.\r\n\r\n\r\n\r\n SCAN COMPLETED IN 4.55 S\r\n "
+    ],
+    [
+      0.000071,
+      "------------------------\r\n\r\n"
+    ],
+    [
+      0.076369,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000028,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jzygalski% \u001b[K"
+    ],
+    [
+      0.000033,
+      "\r\r\n"
+    ],
+    [
+      0.000044,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000048,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jzygalski% \u001b[K"
+    ],
+    [
+      2.689034,
+      "\r\r\n"
+    ],
+    [
+      0.000053,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000066,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[Jzygalski% \u001b[K"
+    ],
+    [
+      0.431689,
+      "\r\r\n"
+    ]
+  ]
+}
