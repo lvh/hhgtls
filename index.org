@@ -56,6 +56,14 @@
 
 ** No longer true!
 
+** Enabling SNI with OpenSSL
+
+ #+BEGIN_HTML
+  <div id="asciinema-lvh-io-yes-sni"></div>
+  <script>
+  asciinema.player.js.CreatePlayer('asciinema-lvh-io-yes-sni', 'asciicast/lvh-io-yes-sni.json', {fontSize: 16});
+  </script>
+ #+END_HTML
 * NPN/ALPN
 
 ** NPN
