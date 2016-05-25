@@ -25,7 +25,7 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">The Hitchhiker's Guide to TLS</h1><p class="date">Created: 2016-05-24 Tue 22:45</p>
+<section id="sec-title-slide"><h1 class="title">The Hitchhiker's Guide to TLS</h1><p class="date">Created: 2016-05-25 Wed 15:58</p>
 </section>
 <link rel="stylesheet" type="text/css" href="asciinema/asciinema-player.css" />
 <script src="asciinema/asciinema-player.js"></script>
@@ -41,7 +41,7 @@
 </section>
 <section>
 <section id="slide-orgheadline2">
-<h2 id="orgheadline2">Introduction</h2>
+<h2 id="orgheadline2">Hello!</h2>
 
 </section>
 </section>
@@ -62,22 +62,41 @@
 </section>
 </section>
 <section>
-<section id="slide-orgheadline8">
-<h2 id="orgheadline8">Automated analysis</h2>
-<div class="outline-text-2" id="text-orgheadline8">
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9">Automated analysis</h2>
+<div class="outline-text-2" id="text-orgheadline9">
 </div></section>
 <section id="slide-orgheadline6">
 <h3 id="orgheadline6">SSLLabs</h3>
+<p>
+<a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.lvh.io&amp;latest">Test lvh.io</a>
+</p>
 
 </section>
 <section id="slide-orgheadline7">
 <h3 id="orgheadline7">sslyze</h3>
+<p>
+<code>docker pull lvhio/sslyze</code>
+</p>
+
+<p>
+<code>&lt;rant&gt;</code>
+</p>
+
+</section>
+<section id="slide-orgheadline8">
+<h3 id="orgheadline8">sslyze</h3>
+<div id="asciinema-sslyze-lvh"></div>
+<script>
+asciinema.player.js.CreatePlayer('asciinema-sslyze-lvh', 'asciicast/sslyze-lvh.json', {fontSize: 16});
+</script>
+
 
 </section>
 </section>
 <section>
-<section id="slide-orgheadline9">
-<h2 id="orgheadline9">Using OpenSSL</h2>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10">Using OpenSSL</h2>
 <div id="asciinema-lvh-io-no-sni"></div>
 <script>
 asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no-sni.json', {fontSize: 16});
@@ -86,15 +105,15 @@ asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no
 </section>
 </section>
 <section>
-<section id="slide-orgheadline13">
-<h2 id="orgheadline13">SNI</h2>
+<section id="slide-orgheadline15">
+<h2 id="orgheadline15">SNI</h2>
 <p>
 (Server Name Indication)
 </p>
 
 </section>
-<section id="slide-orgheadline10">
-<h3 id="orgheadline10">Problem</h3>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11">Problem</h3>
 <ul>
 <li>Client connects to website, looks up IP</li>
 <li>Expects TLS with cert for correct <i>hostname</i></li>
@@ -103,8 +122,8 @@ asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no
 </ul>
 
 </section>
-<section id="slide-orgheadline11">
-<h3 id="orgheadline11">Historical reason TLS is expensive</h3>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12">Historical reason TLS is expensive</h3>
 <ul>
 <li>1 site per public IPv4 address</li>
 <li>IPv4 addresses are expensive</li>
@@ -113,26 +132,44 @@ asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no
 </ul>
 
 </section>
-<section id="slide-orgheadline12">
-<h3 id="orgheadline12">No longer true!</h3>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13">No longer true!</h3>
+
+</section>
+<section id="slide-orgheadline14">
+<h3 id="orgheadline14">Enabling SNI with OpenSSL</h3>
+<div id="asciinema-lvh-io-yes-sni"></div>
+<script>
+asciinema.player.js.CreatePlayer('asciinema-lvh-io-yes-sni', 'asciicast/lvh-io-yes-sni.json', {fontSize: 16});
+</script>
 
 </section>
 </section>
 <section>
 <section id="slide-orgheadline16">
-<h2 id="orgheadline16">NPN/ALPN</h2>
-<div class="outline-text-2" id="text-orgheadline16">
+<h2 id="orgheadline16">Cipher overlap</h2>
+<div id="asciinema-lvh-io-yes-sni"></div>
+<script>
+asciinema.player.js.CreatePlayer('asciinema-lvh-io-yes-sni', 'asciicast/lvh-io-yes-sni.json', {fontSize: 16});
+</script>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline19">
+<h2 id="orgheadline19">NPN/ALPN</h2>
+<div class="outline-text-2" id="text-orgheadline19">
 </div></section>
-<section id="slide-orgheadline14">
-<h3 id="orgheadline14">NPN</h3>
+<section id="slide-orgheadline17">
+<h3 id="orgheadline17">NPN</h3>
 <div id="asciinema-npn"></div>
 <script>
 asciinema.player.js.CreatePlayer('asciinema-npn', 'asciicast/npn.json', {fontSize: 16});
 </script>
 
 </section>
-<section id="slide-orgheadline15">
-<h3 id="orgheadline15">ALPN</h3>
+<section id="slide-orgheadline18">
+<h3 id="orgheadline18">ALPN</h3>
 <div id="asciinema-alpn"></div>
 <script>
 asciinema.player.js.CreatePlayer('asciinema-alpn', 'asciicast/alpn.json', {fontSize: 16});
@@ -141,19 +178,19 @@ asciinema.player.js.CreatePlayer('asciinema-alpn', 'asciicast/alpn.json', {fontS
 </section>
 </section>
 <section>
-<section id="slide-orgheadline37">
-<h2 id="orgheadline37">Cert pinning</h2>
-<div class="outline-text-2" id="text-orgheadline37">
+<section id="slide-orgheadline40">
+<h2 id="orgheadline40">Cert pinning</h2>
+<div class="outline-text-2" id="text-orgheadline40">
 </div></section>
-<section id="slide-orgheadline22">
-<h3 id="orgheadline22">Reminder: CAs are your trust root</h3>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25">Reminder: CAs are your trust root</h3>
 <p>
 You trust <i>x</i> is <i>x</i> because a CA said so
 </p>
 
 </section>
-<section id="slide-orgheadline17">
-<h4 id="orgheadline17">Rogue CA?</h4>
+<section id="slide-orgheadline20">
+<h4 id="orgheadline20">Rogue CA?</h4>
 
 <div class="figure">
 <p><img src="./media/CNNICRootCA.png" alt="CNNICRootCA.png" style="width:80%" />
@@ -161,8 +198,8 @@ You trust <i>x</i> is <i>x</i> because a CA said so
 </div>
 
 </section>
-<section id="slide-orgheadline18">
-<h4 id="orgheadline18">Planted root CA?</h4>
+<section id="slide-orgheadline21">
+<h4 id="orgheadline21">Planted root CA?</h4>
 <ul>
 <li>Part of an attack</li>
 <li>Mandated by employer</li>
@@ -170,30 +207,30 @@ You trust <i>x</i> is <i>x</i> because a CA said so
 </ul>
 
 </section>
-<section id="slide-orgheadline19">
-<h4 id="orgheadline19">Mandated by employer?</h4>
+<section id="slide-orgheadline22">
+<h4 id="orgheadline22">Mandated by employer?</h4>
 <p>
 Having internal CA makes sense
 </p>
 
 </section>
-<section id="slide-orgheadline20">
-<h4 id="orgheadline20">Name constraints</h4>
+<section id="slide-orgheadline23">
+<h4 id="orgheadline23">Name constraints</h4>
 
 </section>
-<section id="slide-orgheadline21">
-<h4 id="orgheadline21">Forgery as a Service</h4>
+<section id="slide-orgheadline24">
+<h4 id="orgheadline24">Forgery as a Service</h4>
 <p>
 e.g sslbump
 </p>
 
 </section>
-<section id="slide-orgheadline26">
-<h3 id="orgheadline26">Cert pinning</h3>
-<div class="outline-text-3" id="text-orgheadline26">
+<section id="slide-orgheadline29">
+<h3 id="orgheadline29">Cert pinning</h3>
+<div class="outline-text-3" id="text-orgheadline29">
 </div></section>
-<section id="slide-orgheadline23">
-<h4 id="orgheadline23">Babylonian confusion</h4>
+<section id="slide-orgheadline26">
+<h4 id="orgheadline26">Babylonian confusion</h4>
 <ul>
 <li>Sometimes means "trust exactly this cert"</li>
 <li>Sometimes, you have to rotate a key</li>
@@ -201,76 +238,76 @@ e.g sslbump
 </ul>
 
 </section>
-<section id="slide-orgheadline24">
-<h4 id="orgheadline24">GMail should be signed by Google</h4>
+<section id="slide-orgheadline27">
+<h4 id="orgheadline27">GMail should be signed by Google</h4>
 <p>
 Browsers (esp. Chrome) should know this
 </p>
 
 </section>
-<section id="slide-orgheadline25">
-<h4 id="orgheadline25">Forgery as a Service</h4>
+<section id="slide-orgheadline28">
+<h4 id="orgheadline28">Forgery as a Service</h4>
 
 </section>
-<section id="slide-orgheadline33">
-<h3 id="orgheadline33">HSTS</h3>
+<section id="slide-orgheadline36">
+<h3 id="orgheadline36">HSTS</h3>
 <p>
 HTTP Strict Transport Security
 </p>
 
 </section>
-<section id="slide-orgheadline27">
-<h4 id="orgheadline27">Some sites should always HTTPS</h4>
+<section id="slide-orgheadline30">
+<h4 id="orgheadline30">Some sites should always HTTPS</h4>
 <p>
 Browsers should know this
 </p>
 
 </section>
-<section id="slide-orgheadline28">
-<h4 id="orgheadline28">HSTS header</h4>
+<section id="slide-orgheadline31">
+<h4 id="orgheadline31">HSTS header</h4>
 <p>
 <code>Strict-Transport-Security: max-age=31536000</code>
 </p>
 
 </section>
-<section id="slide-orgheadline29">
-<h4 id="orgheadline29">Opt-in!</h4>
+<section id="slide-orgheadline32">
+<h4 id="orgheadline32">Opt-in!</h4>
 
 </section>
-<section id="slide-orgheadline30">
-<h4 id="orgheadline30">Only works on next-use</h4>
+<section id="slide-orgheadline33">
+<h4 id="orgheadline33">Only works on next-use</h4>
 
 </section>
-<section id="slide-orgheadline31">
-<h4 id="orgheadline31">HSTS preloading</h4>
+<section id="slide-orgheadline34">
+<h4 id="orgheadline34">HSTS preloading</h4>
 <p>
 Used by all major browsers
 </p>
 
 </section>
-<section id="slide-orgheadline32">
-<h4 id="orgheadline32">Opt-in</h4>
+<section id="slide-orgheadline35">
+<h4 id="orgheadline35">Opt-in</h4>
 <p>
 <code>Strict-Transport-Security: max-age=31536000; preload</code>
 </p>
 
 </section>
-<section id="slide-orgheadline36">
-<h3 id="orgheadline36">HPKP</h3>
+<section id="slide-orgheadline39">
+<h3 id="orgheadline39">HPKP</h3>
 <p>
 HTTP Public Key Pinning
 </p>
 
 </section>
-<section id="slide-orgheadline34">
-<h4 id="orgheadline34">DigiCert is my CA, not the DoD</h4>
+<section id="slide-orgheadline37">
+<h4 id="orgheadline37">DigiCert is my CA, not the DoD</h4>
 <p>
 Browsers should know this
 </p>
 
 </section>
-<section id="slide-orgheadline35">
-<h4 id="orgheadline35">Specify which CA(s) in HSTS</h4>
+<section id="slide-orgheadline38">
+<h4 id="orgheadline38">Specify which CA(s) in HSTS</h4>
 <p>
 Early stages!
 </p>
@@ -285,20 +322,20 @@ Early stages!
 </section>
 </section>
 <section>
-<section id="slide-orgheadline47">
-<h2 id="orgheadline47">Alternative trust chains</h2>
-<div class="outline-text-2" id="text-orgheadline47">
+<section id="slide-orgheadline50">
+<h2 id="orgheadline50">Alternative trust chains</h2>
+<div class="outline-text-2" id="text-orgheadline50">
 </div></section>
-<section id="slide-orgheadline40">
-<h3 id="orgheadline40">Self-signed certs</h3>
-<div class="outline-text-3" id="text-orgheadline40">
+<section id="slide-orgheadline43">
+<h3 id="orgheadline43">Self-signed certs</h3>
+<div class="outline-text-3" id="text-orgheadline43">
 </div></section>
-<section id="slide-orgheadline38">
-<h4 id="orgheadline38">Problem: key rotation</h4>
+<section id="slide-orgheadline41">
+<h4 id="orgheadline41">Problem: key rotation</h4>
 
 </section>
-<section id="slide-orgheadline39">
-<h4 id="orgheadline39">Conclusion</h4>
+<section id="slide-orgheadline42">
+<h4 id="orgheadline42">Conclusion</h4>
 <ul>
 <li>Probably not</li>
 <li>Must control client, server deploys in lockstep</li>
@@ -306,12 +343,12 @@ Early stages!
 </ul>
 
 </section>
-<section id="slide-orgheadline46">
-<h3 id="orgheadline46">Running your own internal CA</h3>
-<div class="outline-text-3" id="text-orgheadline46">
+<section id="slide-orgheadline49">
+<h3 id="orgheadline49">Running your own internal CA</h3>
+<div class="outline-text-3" id="text-orgheadline49">
 </div></section>
-<section id="slide-orgheadline41">
-<h4 id="orgheadline41">CAs aren't magic</h4>
+<section id="slide-orgheadline44">
+<h4 id="orgheadline44">CAs aren't magic</h4>
 <p>
 <code>CA=true</code>
 </p>
@@ -323,15 +360,15 @@ Early stages!
 </div>
 
 </section>
-<section id="slide-orgheadline42">
-<h4 id="orgheadline42">We can do that ourselves!</h4>
+<section id="slide-orgheadline45">
+<h4 id="orgheadline45">We can do that ourselves!</h4>
 <p>
 &#x2026; just gotta trust my root cert
 </p>
 
 </section>
-<section id="slide-orgheadline43">
-<h4 id="orgheadline43">Freedom in issuing certs</h4>
+<section id="slide-orgheadline46">
+<h4 id="orgheadline46">Freedom in issuing certs</h4>
 <ul>
 <li>ECDSA? Sure!</li>
 <li>1000 client certs? Sure!</li>
@@ -339,15 +376,15 @@ Early stages!
 </ul>
 
 </section>
-<section id="slide-orgheadline44">
-<h4 id="orgheadline44">Protection against rogue CA</h4>
+<section id="slide-orgheadline47">
+<h4 id="orgheadline47">Protection against rogue CA</h4>
 <p>
 Mossad threat model
 </p>
 
 </section>
-<section id="slide-orgheadline45">
-<h4 id="orgheadline45">Operational challenges</h4>
+<section id="slide-orgheadline48">
+<h4 id="orgheadline48">Operational challenges</h4>
 <p>
 How securely can you run a CA?
 </p>
@@ -355,12 +392,12 @@ How securely can you run a CA?
 </section>
 </section>
 <section>
-<section id="slide-orgheadline51">
-<h2 id="orgheadline51">Client certificates</h2>
-<div class="outline-text-2" id="text-orgheadline51">
+<section id="slide-orgheadline54">
+<h2 id="orgheadline54">Client certificates</h2>
+<div class="outline-text-2" id="text-orgheadline54">
 </div></section>
-<section id="slide-orgheadline50">
-<h3 id="orgheadline50">Recap: "normal" TLS</h3>
+<section id="slide-orgheadline53">
+<h3 id="orgheadline53">Recap: "normal" TLS</h3>
 <ul>
 <li>Server is authenticated by TLS (certificate)</li>
 <li>Client is <i>not</i> authenticated by TLS</li>
@@ -373,15 +410,15 @@ How securely can you run a CA?
 </ul>
 
 </section>
-<section id="slide-orgheadline48">
-<h4 id="orgheadline48">Alternative: client certificates</h4>
+<section id="slide-orgheadline51">
+<h4 id="orgheadline51">Alternative: client certificates</h4>
 <p>
 Both peers exchange &amp; verify certs
 </p>
 
 </section>
-<section id="slide-orgheadline49">
-<h4 id="orgheadline49">Who signs your certs?</h4>
+<section id="slide-orgheadline52">
+<h4 id="orgheadline52">Who signs your certs?</h4>
 <p>
 Probably need your own CA
 </p>
