@@ -17,13 +17,31 @@
 
 * Hello!
 
+* Intro to TLS
+
+  (Hynek)
+
 * Servers
 
 ** Configuring TLS servers
 
+   https://wiki.mozilla.org/Security/Server_Side_TLS
+
 * Twisted
 
+  (Glyph)
+
+* LetsEncrypt
+
+** ACME
+
+** rproxy
+
+   https://pypi.python.org/pypi/rproxy
+
 * Automated analysis
+
+** Browsers are pretty good now
 
 ** SSLLabs
 
@@ -44,13 +62,12 @@
   </script>
  #+END_HTML
 
-
 * Using OpenSSL
 
  #+BEGIN_HTML
   <div id="asciinema-lvh-io-no-sni"></div>
   <script>
-  asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no-sni.json', {fontSize: 16});
+  asciinema.player.js.CreatePlayer('asciinema-lvh-io-no-sni', 'asciicast/lvh-io-no-sni.json', {fontSize: 16});RB
   </script>
  #+END_HTML
 
@@ -84,9 +101,9 @@
 * Cipher overlap
 
  #+BEGIN_HTML
-  <div id="asciinema-lvh-io-yes-sni"></div>
+  <div id="asciinema-no-cipher-overlap"></div>
   <script>
-  asciinema.player.js.CreatePlayer('asciinema-lvh-io-yes-sni', 'asciicast/lvh-io-yes-sni.json', {fontSize: 16});
+  asciinema.player.js.CreatePlayer('asciinema-no-cipher-overlap', 'asciicast/no-cipher-overlap.json', {fontSize: 16});
   </script>
  #+END_HTML
 
@@ -109,6 +126,26 @@
   asciinema.player.js.CreatePlayer('asciinema-alpn', 'asciicast/alpn.json', {fontSize: 16});
   </script>
  #+END_HTML
+
+* Cross-signed chains
+
+** Oops!
+
+  #+BEGIN_HTML
+  <div id="asciinema-alt-chain-fail"></div>
+  <script>
+  asciinema.player.js.CreatePlayer('asciinema-alt-chain-fail', 'asciicast/alt-chain-fail.json', {fontSize: 16});
+  </script>
+  #+END_HTML
+
+** Success
+
+  #+BEGIN_HTML
+  <div id="asciinema-alt-chain-success"></div>
+  <script>
+  asciinema.player.js.CreatePlayer('asciinema-alt-chain-success', 'asciicast/alt-chain-success.json', {fontSize: 16});
+  </script>
+  #+END_HTML
 
 * Cert pinning
 
@@ -148,6 +185,27 @@
     Browsers (esp. Chrome) should know this
 
 *** Forgery as a Service
+
+*** PSA: BlueCoat
+
+    [[./media/BlueCoatTrusted.png]]
+
+*** PSA: BlueCoat
+
+    [[./media/BlueCoatUntrusted.png]]
+
+
+*** Untrusting on OS X
+
+    https://blog.filippo.io/untrusting-an-intermediate-ca-on-os-x/
+
+*** Untrusting on Firefox
+
+
+*** Untrusting in general
+
+    https://certsimple.com/blog/control-the-ssl-cas-your-browser-trusts
+
 
 ** HSTS
 
